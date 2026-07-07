@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "projects": "Projets",
+    "about": "À propos",
+    "contact": "Contact",
+    "logo": "Portfolio",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
+  },
+  "a11y": {
+    "skipToContent": "Aller au contenu principal"
+  },
+  "hero": {
+    "eyebrow": "Architecte Frontend Senior",
+    "title": "Je conçois des expériences web orientées conversion, rapides, accessibles et scalables.",
+    "description": "Des design systems aux parcours critiques de revenus, j'aide les équipes à livrer une UX plus claire et des résultats mesurables.",
+    "seeCaseStudies": "Voir les études de cas",
+    "bookIntro": "Réserver une intro de 20 min",
+    "getInTouch": "Me contacter"
+  },
+  "outcomes": {
+    "title": "Résultats sélectionnés",
+    "subtitle": "Métriques d'impact produit et plateforme.",
+    "items": {
+      "lcp": "LCP plus rapide sur les landings clés",
+      "checkout": "Meilleure complétion checkout mobile",
+      "teams": "Équipes produit sur design system partagé",
+      "uptime": "Disponibilité sur dashboards à fort trafic"
+    }
+  },
+  "whatIDo": {
+    "eyebrow": "Ce que je fais",
+    "title": "Des expériences produit performantes et convertissantes.",
+    "subtitle": "Un processus focalisé : vitesse, UX et architecture.",
+    "steps": {
+      "performance": {
+        "title": "Performance",
+        "body": "Je réduis la friction via les Core Web Vitals, supprime les goulots de rendu et conçois une vitesse perçue sur appareils réels."
+      },
+      "ux": {
+        "title": "UX",
+        "body": "Interfaces orientées conversion avec hiérarchie claire, copy précis et interactions accessibles."
+      },
+      "architecture": {
+        "title": "Architecture",
+        "body": "Des fondations React et Next.js scalables pour livrer vite sans sacrifier la qualité."
+      }
+    }
+  },
+  "featuredCaseStudy": {
+    "eyebrow": "Projet en vedette",
+    "title": "Récit du parcours de paiement mobile",
+    "subtitle": "Étude structurée : problème, solution et résultat mesurable.",
+    "steps": {
+      "problem": {
+        "title": "Problème",
+        "body": "Un produit à fort trafic voyait l'abandon au checkout mobile et des états d'échec peu clairs lors des redirections de paiement."
+      },
+      "solution": {
+        "title": "Solution",
+        "body": "Refonte du checkout autour de la confiance, de la vitesse et de la récupération, avec une machine à états frontend résiliente et une instrumentation mesurable."
+      },
+      "result": {
+        "title": "Résultat",
+        "body": "La complétion checkout a augmenté de 23 %, le paiement en un geste a atteint 60 % en 30 jours, et les tickets support liés à l'UX paiement ont baissé."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projets en vedette",
+    "subtitle": "Une sélection de travaux récents — des tableaux de bord produit aux design systems.",
+    "view": "Voir",
+    "viewAll": "Voir tous les projets",
+    "pageTitle": "Projets",
+    "pageSubtitle": "Une collection de travaux produit, design systems et infrastructure.",
+    "filterAll": "Tous",
+    "categories": {
+      "all": "Tous",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "infrastructure": "Infrastructure"
+    },
+    "noMatch": "Aucun projet ne correspond à ce filtre.",
+    "backToProjects": "Retour aux projets",
+    "code": "Code",
+    "demo": "Démo",
+    "techStack": "Stack technique",
+    "architecture": "Architecture",
+    "challenges": "Défis",
+    "results": "Résultats",
+    "problem": "Problème",
+    "solution": "Solution",
+    "viewAllProjects": "Voir tous les projets"
+  },
+  "projectDetail": {
+    "defineChallenge": "Définir le défi central",
+    "translateSolution": "Traduire les contraintes en solution scalable",
+    "shipOutcomes": "Livrer des résultats mesurables",
+    "processEyebrow": "Processus",
+    "processTitle": "Comment le travail a été exécuté",
+    "discover": "Découvrir",
+    "build": "Construire",
+    "validate": "Valider",
+    "steps": {
+      "insight": "Insight",
+      "target": "Cible",
+      "process": "Processus",
+      "impact": "Impact",
+      "next": "Suite"
+    }
+  },
+  "about": {
+    "title": "À propos",
+    "subtitle": "Un peu sur moi et ma façon de travailler.",
+    "paragraph1": "Je suis Architecte Frontend Senior, focalisé sur des applications web rapides, accessibles et maintenables. Les design systems, budgets performance et DX comptent — les meilleurs produits naissent de la collaboration design-ingénierie.",
+    "paragraph2": "Mon travail va du greenfield à la montée en charge des design systems et du mentorat. J'ai dirigé des fronts pour des produits à millions d'utilisateurs, avec de bons scores Lighthouse et conformité accessibilité.",
+    "paragraph3": "Hors code, je lis sur le design de systèmes, fais des side projects ou suis dehors. Toujours ouvert aux problèmes intéressants et nouvelles collaborations.",
+    "skillsTitle": "Compétences",
+    "experienceTitle": "Expérience"
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Un projet en tête ? Parlons-en.",
+    "cta": "Ouvert aux nouvelles opportunités et problèmes intéressants. Écrivez-moi, je réponds rapidement.",
+    "sayHello": "Dire bonjour",
+    "pageTitle": "Contact",
+    "pageSubtitle": "Un projet ou une collaboration ? Écrivez-moi.",
+    "formIntro": "Le meilleur moyen est l'email. Je réponds en général sous quelques jours."
+  },
+  "footer": {
+    "tagline": "Architecte Frontend Senior & Ingénieur UX. Expériences web rapides, accessibles et scalables.",
+    "navigation": "Navigation",
+    "getInTouch": "Contact",
+    "getInTouchDesc": "Ouvert aux nouvelles opportunités et problèmes intéressants.",
+    "sayHello": "Dire bonjour",
+    "copyright": "© {year} Portfolio."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Cette page est introuvable.",
+    "backHome": "Retour à l'accueil"
+  },
+  "theme": {
+    "light": "Mode clair",
+    "dark": "Mode sombre",
+    "system": "Système"
+  },
+  "locale": {
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français"
+  },
+  "projectItems": {
+    "real-time-dashboard": {
+      "title": "Tableau de bord analytique en temps réel",
+      "description": "Tableau de bord haute performance pour surveiller les métriques système avec mises à jour WebSocket en direct et graphiques interactifs."
+    },
+    "design-system": {
+      "title": "Système de design de composants",
+      "description": "Système de design accessible et thématisable avec plus de 50 composants et site de documentation complet."
+    },
+    "mobile-payment-flow": {
+      "title": "Parcours de paiement mobile-first",
+      "description": "Expérience de checkout optimisée pour mobile avec moyens enregistrés et paiement en un clic."
+    },
+    "api-gateway": {
+      "title": "Passerelle API interne",
+      "description": "Passerelle centrale pour le tráfic inter-services et API externes avec authentification, limites de débit et observabilité."
+    },
+    "docs-platform": {
+      "title": "Plateforme de documentation développeur",
+      "description": "Documentation versionnée avec recherche, exemples de code et référence API interactive."
+    }
+  }
+}

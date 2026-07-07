@@ -1,0 +1,178 @@
+{
+  "nav": {
+    "home": "Início",
+    "projects": "Projetos",
+    "about": "Sobre",
+    "contact": "Contato",
+    "logo": "Portfólio",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "a11y": {
+    "skipToContent": "Ir para o conteúdo principal"
+  },
+  "hero": {
+    "eyebrow": "Arquiteto Frontend Sênior",
+    "title": "Construo experiências web focadas em conversão, rápidas, acessíveis e escaláveis.",
+    "description": "De design systems a fluxos críticos de receita, ajudo equipes a entregar UX mais limpa e resultados mensuráveis.",
+    "seeCaseStudies": "Ver estudos de caso",
+    "bookIntro": "Agendar intro de 20 min",
+    "getInTouch": "Entrar em contato"
+  },
+  "outcomes": {
+    "title": "Resultados selecionados",
+    "subtitle": "Métricas de impacto em produto e plataforma.",
+    "items": {
+      "lcp": "LCP mais rápido em landings principais",
+      "checkout": "Maior conclusão de checkout mobile",
+      "teams": "Equipes de produto usando design system compartilhado",
+      "uptime": "Disponibilidade em dashboards de alto tráfego"
+    }
+  },
+  "whatIDo": {
+    "eyebrow": "O que faço",
+    "title": "Experiências de produto que performam e convertem.",
+    "subtitle": "Processo focado: velocidade, UX e arquitetura.",
+    "steps": {
+      "performance": {
+        "title": "Performance",
+        "body": "Reduzo atrito com Core Web Vitals, removo gargalos de render e projeto percepção de velocidade em dispositivos reais."
+      },
+      "ux": {
+        "title": "UX",
+        "body": "Interfaces orientadas a conversão com hierarquia clara, copy objetivo e interações acessíveis."
+      },
+      "architecture": {
+        "title": "Arquitetura",
+        "body": "Bases escaláveis em React e Next.js para equipes entregarem rápido sem sacrificar qualidade."
+      }
+    }
+  },
+  "featuredCaseStudy": {
+    "eyebrow": "Projeto em destaque",
+    "title": "História do fluxo de pagamento mobile",
+    "subtitle": "Estudo estruturado: problema, solução e resultado mensurável.",
+    "steps": {
+      "problem": {
+        "title": "Problema",
+        "body": "Produto de alto tráfego com abandono no checkout mobile e estados de falha pouco claros em redirecionamentos de pagamento."
+      },
+      "solution": {
+        "title": "Solução",
+        "body": "Redesenhei o checkout em torno de confiança, velocidade e recuperação, com máquina de estados frontend resiliente e instrumentação mensurável."
+      },
+      "result": {
+        "title": "Resultado",
+        "body": "Conclusão de checkout subiu 23%, pagamento em um toque chegou a 60% em 30 dias e tickets de suporte por UX de pagamento caíram."
+      }
+    }
+  },
+  "projects": {
+    "title": "Projetos em destaque",
+    "subtitle": "Uma seleção de trabalho recente — de dashboards de produto a design systems.",
+    "view": "Ver",
+    "viewAll": "Ver todos os projetos",
+    "pageTitle": "Projetos",
+    "pageSubtitle": "Uma coleção de trabalho em produto, design systems e infraestrutura.",
+    "filterAll": "Todos",
+    "categories": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "infrastructure": "Infraestrutura"
+    },
+    "noMatch": "Nenhum projeto corresponde a este filtro.",
+    "backToProjects": "Voltar aos projetos",
+    "code": "Código",
+    "demo": "Demo",
+    "techStack": "Stack técnico",
+    "architecture": "Arquitetura",
+    "challenges": "Desafios",
+    "results": "Resultados",
+    "problem": "Problema",
+    "solution": "Solução",
+    "viewAllProjects": "Ver todos os projetos"
+  },
+  "projectDetail": {
+    "defineChallenge": "Definir o desafio central",
+    "translateSolution": "Traduzir restrições em solução escalável",
+    "shipOutcomes": "Entregar resultados mensuráveis",
+    "processEyebrow": "Processo",
+    "processTitle": "Como o trabalho foi executado",
+    "discover": "Descobrir",
+    "build": "Construir",
+    "validate": "Validar",
+    "steps": {
+      "insight": "Insight",
+      "target": "Alvo",
+      "process": "Processo",
+      "impact": "Impacto",
+      "next": "Próximo"
+    }
+  },
+  "about": {
+    "title": "Sobre",
+    "subtitle": "Um pouco sobre mim e como trabalho.",
+    "paragraph1": "Sou Arquiteto Frontend Sênior com foco em aplicações web rápidas, acessíveis e sustentáveis. Valorizo design systems, orçamentos de performance e experiência do desenvolvedor — e acredito que os melhores produtos nascem da colaboração entre design e engenharia.",
+    "paragraph2": "Meu trabalho vai de produto greenfield à escala de design systems e mentoria. Liderei frontends para produtos com milhões de usuários, com entregas de alto Lighthouse e conformidade de acessibilidade.",
+    "paragraph3": "Fora do código, leio sobre design de sistemas, faço projetos pessoais ou estou ao ar livre. Sempre aberto a problemas interessantes e novas colaborações.",
+    "skillsTitle": "Competências",
+    "experienceTitle": "Experiência"
+  },
+  "contact": {
+    "title": "Contato",
+    "subtitle": "Tem um projeto em mente? Vamos conversar.",
+    "cta": "Estou aberto a novas oportunidades e problemas interessantes. Envie uma mensagem e responderei em breve.",
+    "sayHello": "Diga olá",
+    "pageTitle": "Contato",
+    "pageSubtitle": "Tem um projeto em mente ou quer colaborar? Envie uma mensagem.",
+    "formIntro": "A melhor forma de contato é por email. Costumo responder em alguns dias."
+  },
+  "footer": {
+    "tagline": "Arquiteto Frontend Sênior e Engenheiro UX. Experiências web rápidas, acessíveis e escaláveis.",
+    "navigation": "Navegação",
+    "getInTouch": "Contato",
+    "getInTouchDesc": "Aberto a novas oportunidades e problemas interessantes.",
+    "sayHello": "Diga olá",
+    "copyright": "© {year} Portfólio."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Esta página não foi encontrada.",
+    "backHome": "Voltar ao início"
+  },
+  "theme": {
+    "light": "Modo claro",
+    "dark": "Modo escuro",
+    "system": "Sistema"
+  },
+  "locale": {
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français"
+  },
+  "projectItems": {
+    "real-time-dashboard": {
+      "title": "Painel de analytics em tempo real",
+      "description": "Painel de alto desempenho para monitorar métricas do sistema com atualizações WebSocket ao vivo e gráficos interativos."
+    },
+    "design-system": {
+      "title": "Sistema de design de componentes",
+      "description": "Sistema de design acessível e tematizável com mais de 50 componentes e site de documentação completo."
+    },
+    "mobile-payment-flow": {
+      "title": "Fluxo de pagamento mobile-first",
+      "description": "Experiência de checkout otimizada para mobile com métodos salvos e pagamento com um toque."
+    },
+    "api-gateway": {
+      "title": "API Gateway interno",
+      "description": "Gateway central para tráfego entre serviços e APIs externas com autenticação, limites de taxa e observabilidade."
+    },
+    "docs-platform": {
+      "title": "Plataforma de documentação para desenvolvedores",
+      "description": "Documentação versionada com busca, exemplos de código e referência interativa de API."
+    }
+  }
+}
