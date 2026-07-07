@@ -12,6 +12,7 @@ concurrency:
 
 env:
   CONTENT_FALLBACK_ENABLED: "true"
+  STATIC_MODE: "true"
   NODE_VERSION: "20"
 
 jobs:
