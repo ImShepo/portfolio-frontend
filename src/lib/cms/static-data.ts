@@ -25,17 +25,15 @@ const LOCALE_MESSAGES: Record<Locale, Messages> = { en, es, pt, fr };
 // ─── Contact links ───────────────────────────────────────────────────────────
 
 const CONTACT_LINKS: ContactContent["links"] = [
-  { type: "email", label: "hello@example.com", href: "mailto:hello@example.com" },
-  { type: "github", label: "GitHub", href: "https://github.com" },
-  { type: "linkedin", label: "LinkedIn", href: "https://linkedin.com" },
-  { type: "twitter", label: "Twitter", href: "https://twitter.com" },
+  { type: "email", label: "piperincon.dev@gmail.com", href: "mailto:piperincon.dev@gmail.com" },
+  { type: "github", label: "GitHub", href: "https://github.com/ImShepo" },
+  { type: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/pipe-rincon" },
 ];
 
 const FOOTER_SOCIAL_LINKS: FooterContent["socialLinks"] = [
-  { type: "github", label: "GitHub", href: "https://github.com" },
-  { type: "linkedin", label: "LinkedIn", href: "https://linkedin.com" },
-  { type: "twitter", label: "Twitter", href: "https://twitter.com" },
-  { type: "email", label: "Email", href: "mailto:hello@example.com" },
+  { type: "github", label: "GitHub", href: "https://github.com/ImShepo" },
+  { type: "linkedin", label: "LinkedIn", href: "https://linkedin.com/in/pipe-rincon" },
+  { type: "email", label: "Email", href: "mailto:piperincon.dev@gmail.com" },
 ];
 
 // ─── Section builders ────────────────────────────────────────────────────────
@@ -54,10 +52,10 @@ function buildHome(m: Messages): HomeContent {
       title: m.outcomes.title,
       subtitle: m.outcomes.subtitle,
       items: [
-        { value: 40, suffix: "%", label: m.outcomes.items.lcp },
-        { value: 23, suffix: "%", label: m.outcomes.items.checkout },
-        { value: 15, suffix: "+", label: m.outcomes.items.teams },
-        { value: 99.9, suffix: "%", label: m.outcomes.items.uptime },
+        { value: 4, suffix: "+", label: m.outcomes.items.lcp },
+        { value: 8, suffix: "+", label: m.outcomes.items.checkout },
+        { value: 3, suffix: "+", label: m.outcomes.items.teams },
+        { value: 5, suffix: "", label: m.outcomes.items.uptime },
       ],
     },
     whatIDo: {
@@ -131,56 +129,58 @@ function buildFooter(m: Messages): FooterContent {
 
 const STATIC_SKILLS: SkillsContent = [
   { name: "TypeScript", category: "Language", icon: "code", level: "Expert" },
-  { name: "React", category: "Frontend", icon: "react", level: "Expert" },
-  { name: "Next.js", category: "Framework", icon: "nextjs", level: "Expert" },
-  { name: "Node.js", category: "Backend", icon: "server", level: "Advanced" },
-  { name: "NestJS", category: "Backend", icon: "server", level: "Advanced" },
-  { name: "GraphQL", category: "API", icon: "database", level: "Advanced" },
-  { name: "PostgreSQL", category: "Database", icon: "database", level: "Advanced" },
-  { name: "Prisma", category: "ORM", icon: "database", level: "Advanced" },
+  { name: "Java", category: "Language", icon: "code", level: "Expert" },
+  { name: "JavaScript", category: "Language", icon: "code", level: "Expert" },
+  { name: "Dart", category: "Language", icon: "code", level: "Advanced" },
+  { name: "NestJS", category: "Backend", icon: "server", level: "Expert" },
+  { name: "Spring Boot", category: "Backend", icon: "server", level: "Expert" },
+  { name: "Node.js", category: "Backend", icon: "server", level: "Expert" },
+  { name: "Next.js", category: "Frontend", icon: "nextjs", level: "Advanced" },
+  { name: "React", category: "Frontend", icon: "react", level: "Advanced" },
+  { name: "Flutter", category: "Mobile", icon: "smartphone", level: "Advanced" },
+  { name: "PostgreSQL", category: "Database", icon: "database", level: "Expert" },
+  { name: "MongoDB", category: "Database", icon: "database", level: "Advanced" },
   { name: "Docker", category: "DevOps", icon: "cloud", level: "Advanced" },
-  { name: "Kubernetes", category: "DevOps", icon: "cloud", level: "Intermediate" },
-  { name: "Tailwind CSS", category: "Styling", icon: "palette", level: "Expert" },
-  { name: "Web Performance", category: "Quality", icon: "zap", level: "Expert" },
-  { name: "Accessibility", category: "Quality", icon: "accessibility", level: "Expert" },
-  { name: "Design Systems", category: "UX", icon: "layout", level: "Expert" },
+  { name: "AWS", category: "Cloud", icon: "cloud", level: "Advanced" },
+  { name: "Microservices", category: "Architecture", icon: "layout", level: "Advanced" },
+  { name: "RabbitMQ", category: "Messaging", icon: "zap", level: "Advanced" },
 ];
 
 const STATIC_EXPERIENCE: ExperienceContent = [
   {
-    company: "Tech Corp",
-    role: "Senior Frontend Architect",
-    period: "2022 – Present",
+    company: "Alteza Enterprise",
+    role: "Mid Senior Software Developer",
+    period: "2023 – Present",
     description:
-      "Lead frontend architecture for core product surfaces. Define patterns for state, data fetching, and design systems. Mentor engineers and drive accessibility and performance standards.",
+      "Lead the backend team for enterprise-scale electronic billing systems. Drive architectural improvements through microservices adoption, async messaging with RabbitMQ, and SOLID design principles. Integrate payment gateways and implement risk analysis strategies for financial security.",
     highlights: [
-      "Shipped design system used by 15+ teams",
-      "Reduced LCP by 40% across key flows",
-      "Established a11y review process",
+      "Designed microservices architecture improving modularity and maintainability",
+      "Integrated payment gateways with risk analysis for financial security",
+      "Leveraged AI-assisted tools to accelerate development and optimize workflows",
     ],
   },
   {
-    company: "Startup Inc",
-    role: "Staff Engineer",
-    period: "2019 – 2022",
+    company: "Vortex Soluciones SAS",
+    role: "Mid Senior Software Developer",
+    period: "Apr 2025 – Nov 2025",
     description:
-      "Owned the web application end-to-end. Built real-time features, payment integration, and the first version of the design system.",
+      "Designed and delivered a mobility metrics monitoring platform (Flutter mobile app + NestJS web admin) and an LMS system for ATEC. Built real-time dashboards, scalable REST APIs, and managed cloud deployments on Railway and Google Play Store.",
     highlights: [
-      "Scaled frontend from 2 to 12 engineers",
-      "Launched mobile-first payment flow",
-      "Introduced TypeScript and testing culture",
+      "Built real-time mobility analytics dashboards for operations teams",
+      "Published mobile app to Google Play Store",
+      "Applied clean architecture with JWT and role-based access control",
     ],
   },
   {
-    company: "Agency Co",
-    role: "Lead Frontend Developer",
-    period: "2016 – 2019",
+    company: "Sougile SAS",
+    role: "Backend Software Developer",
+    period: "Jun 2022 – Nov 2023",
     description:
-      "Delivered high-profile client projects: e-commerce, dashboards, and marketing sites. Focus on performance and cross-browser compatibility.",
+      "Developed and optimized backend services with Node.js and NestJS, applying OOP principles and code refactoring for improved architecture. Managed database structures with Firestore on Google Cloud, facilitating collaborative development integration.",
     highlights: [
-      "Led 5+ greenfield projects",
-      "Achieved 95+ Lighthouse scores consistently",
-      "Built reusable component library",
+      "Improved backend architecture with OOP and SOLID principles",
+      "Managed cloud databases with Firestore on Google Cloud",
+      "Built and containerized microservices with NestJS and Docker",
     ],
   },
 ];

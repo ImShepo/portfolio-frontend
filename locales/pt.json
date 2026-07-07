@@ -2,78 +2,78 @@
   "nav": {
     "home": "Início",
     "projects": "Projetos",
-    "about": "Sobre",
+    "about": "Sobre mim",
     "contact": "Contato",
-    "logo": "Portfólio",
+    "logo": "Pipe Rincón",
     "openMenu": "Abrir menu",
     "closeMenu": "Fechar menu"
   },
   "a11y": {
-    "skipToContent": "Ir para o conteúdo principal"
+    "skipToContent": "Pular para o conteúdo principal"
   },
   "hero": {
-    "eyebrow": "Arquiteto Frontend Sênior",
-    "title": "Construo experiências web focadas em conversão, rápidas, acessíveis e escaláveis.",
-    "description": "De design systems a fluxos críticos de receita, ajudo equipes a entregar UX mais limpa e resultados mensuráveis.",
-    "seeCaseStudies": "Ver estudos de caso",
+    "eyebrow": "Engenheiro de Software Full Stack",
+    "title": "Construo sistemas de backend escaláveis e plataformas web para aplicações empresariais de alta demanda.",
+    "description": "De arquiteturas de microsserviços a dashboards em tempo real, ajudo equipes a entregar software robusto, manutenível e com impacto mensurável.",
+    "seeCaseStudies": "Ver meus projetos",
     "bookIntro": "Agendar intro de 20 min",
-    "getInTouch": "Entrar em contato"
+    "getInTouch": "Entre em contato"
   },
   "outcomes": {
-    "title": "Resultados selecionados",
-    "subtitle": "Métricas de impacto em produto e plataforma.",
+    "title": "Resultados Selecionados",
+    "subtitle": "Métricas de trabalho em produção em plataformas empresariais e projetos pessoais.",
     "items": {
-      "lcp": "LCP mais rápido em landings principais",
-      "checkout": "Maior conclusão de checkout mobile",
-      "teams": "Equipes de produto usando design system compartilhado",
-      "uptime": "Disponibilidade em dashboards de alto tráfego"
+      "lcp": "Anos de experiência profissional full stack",
+      "checkout": "Projetos entregues em web e mobile",
+      "teams": "Plataformas empresariais lideradas tecnicamente",
+      "uptime": "Idiomas em nível profissional"
     }
   },
   "whatIDo": {
-    "eyebrow": "O que faço",
-    "title": "Experiências de produto que performam e convertem.",
-    "subtitle": "Processo focado: velocidade, UX e arquitetura.",
+    "eyebrow": "O Que Eu Faço",
+    "title": "Construindo backends robustos e produtos full stack que escalam.",
+    "subtitle": "Uma abordagem disciplinada da arquitetura ao deployment.",
     "steps": {
       "performance": {
-        "title": "Performance",
-        "body": "Reduzo atrito com Core Web Vitals, removo gargalos de render e projeto percepção de velocidade em dispositivos reais."
+        "title": "Arquitetura Backend",
+        "body": "Projeto microsserviços escaláveis e APIs REST com NestJS, Spring Boot e Node.js — com mensageria assíncrona, princípios SOLID e arquitetura limpa para manutenibilidade de longo prazo."
       },
       "ux": {
-        "title": "UX",
-        "body": "Interfaces orientadas a conversão com hierarquia clara, copy objetivo e interações acessíveis."
+        "title": "Desenvolvimento Full Stack",
+        "body": "Construo produtos completos de ponta a ponta: APIs backend, interfaces web com React e Next.js, e apps móveis com Flutter — cobrindo todo o ciclo do esquema de banco de dados à interface."
       },
       "architecture": {
-        "title": "Arquitetura",
-        "body": "Bases escaláveis em React e Next.js para equipes entregarem rápido sem sacrificar qualidade."
+        "title": "Cloud e Integração",
+        "body": "Faço deploy de serviços na AWS, Railway e Docker, integro gateways de pagamento e conecto sistemas complexos com padrões orientados a eventos e RabbitMQ para processamento assíncrono confiável."
       }
     }
   },
   "featuredCaseStudy": {
-    "eyebrow": "Projeto em destaque",
-    "title": "História do fluxo de pagamento mobile",
-    "subtitle": "Estudo estruturado: problema, solução e resultado mensurável.",
+    "eyebrow": "Projeto em Destaque",
+    "title": "Migração de Plataforma de Faturamento Eletrônico Empresarial",
+    "subtitle": "Liderando a equipe de backend na reformulação para microsserviços de um sistema de faturamento crítico.",
     "steps": {
       "problem": {
         "title": "Problema",
-        "body": "Produto de alto tráfego com abandono no checkout mobile e estados de falha pouco claros em redirecionamentos de pagamento."
+        "body": "Uma plataforma de faturamento empresarial de alta demanda enfrentava uma arquitetura monolítica que tornava o escalonamento, a manutenção e a entrega de novas funcionalidades lentos e arriscados."
       },
       "solution": {
         "title": "Solução",
-        "body": "Redesenhei o checkout em torno de confiança, velocidade e recuperação, com máquina de estados frontend resiliente e instrumentação mensurável."
+        "body": "Liderei a equipe de backend e projetei uma arquitetura de microsserviços com RabbitMQ para processamento de eventos assíncrono, aplicando princípios SOLID e padrões orientados a eventos para desacoplar os módulos de faturamento."
       },
       "result": {
         "title": "Resultado",
-        "body": "Conclusão de checkout subiu 23%, pagamento em um toque chegou a 60% em 30 dias e tickets de suporte por UX de pagamento caíram."
+        "body": "A plataforma ganhou maior modularidade, melhor isolamento de falhas, ciclos de deploy mais rápidos para regras de faturamento, e integrações seguras de gateways de pagamento com análise de risco."
       }
     }
   },
   "projects": {
     "title": "Projetos em destaque",
-    "subtitle": "Uma seleção de trabalho recente — de dashboards de produto a design systems.",
+    "subtitle": "Uma coleção de trabalho em sistemas backend, plataformas web e apps móveis.",
     "view": "Ver",
     "viewAll": "Ver todos os projetos",
     "pageTitle": "Projetos",
-    "pageSubtitle": "Uma coleção de trabalho em produto, design systems e infraestrutura.",
+    "pageSubtitle": "Uma coleção de trabalho em sistemas backend, plataformas web e aplicativos móveis.",
     "filterAll": "Todos",
     "categories": {
       "all": "Todos",
@@ -86,7 +86,7 @@
     "backToProjects": "Voltar aos projetos",
     "code": "Código",
     "demo": "Demo",
-    "techStack": "Stack técnico",
+    "techStack": "Stack tecnológico",
     "architecture": "Arquitetura",
     "challenges": "Desafios",
     "results": "Resultados",
@@ -96,7 +96,7 @@
   },
   "projectDetail": {
     "defineChallenge": "Definir o desafio central",
-    "translateSolution": "Traduzir restrições em solução escalável",
+    "translateSolution": "Traduzir restrições em uma solução escalável",
     "shipOutcomes": "Entregar resultados mensuráveis",
     "processEyebrow": "Processo",
     "processTitle": "Como o trabalho foi executado",
@@ -105,37 +105,37 @@
     "validate": "Validar",
     "steps": {
       "insight": "Insight",
-      "target": "Alvo",
+      "target": "Objetivo",
       "process": "Processo",
       "impact": "Impacto",
       "next": "Próximo"
     }
   },
   "about": {
-    "title": "Sobre",
-    "subtitle": "Um pouco sobre mim e como trabalho.",
-    "paragraph1": "Sou Arquiteto Frontend Sênior com foco em aplicações web rápidas, acessíveis e sustentáveis. Valorizo design systems, orçamentos de performance e experiência do desenvolvedor — e acredito que os melhores produtos nascem da colaboração entre design e engenharia.",
-    "paragraph2": "Meu trabalho vai de produto greenfield à escala de design systems e mentoria. Liderei frontends para produtos com milhões de usuários, com entregas de alto Lighthouse e conformidade de acessibilidade.",
-    "paragraph3": "Fora do código, leio sobre design de sistemas, faço projetos pessoais ou estou ao ar livre. Sempre aberto a problemas interessantes e novas colaborações.",
-    "skillsTitle": "Competências",
+    "title": "Sobre Mim",
+    "subtitle": "Engenheiro full stack desenvolvendo sistemas empresariais e plataformas web de Tunja, Colômbia.",
+    "paragraph1": "Sou um Engenheiro de Software Full Stack com mais de 4 anos de experiência entregando plataformas web e sistemas empresariais em produção. Especializo-me em arquitetura backend e microsserviços, com fortes habilidades em todo o stack — de APIs REST e bancos de dados a React, Next.js e apps móveis com Flutter.",
+    "paragraph2": "Liderei equipes de backend para sistemas de faturamento eletrônico em escala empresarial, projetei arquiteturas de microsserviços e orientadas a eventos, integrei gateways de pagamento e entreguei dashboards em tempo real e apps móveis no Google Play. Gosto de trabalhar próximo à lógica de negócio e me sinto confortável em funções de liderança e de engenharia direta.",
+    "paragraph3": "Sou autodidata e apaixonado pelo aprendizado contínuo — incluindo fluxos de trabalho de desenvolvimento assistidos por IA. Falo espanhol nativamente, inglês em nível C1 e tenho conhecimento de português e francês. Estou sempre aberto a novos desafios e colaborações significativas.",
+    "skillsTitle": "Habilidades",
     "experienceTitle": "Experiência"
   },
   "contact": {
-    "title": "Contato",
+    "title": "Entre em contato",
     "subtitle": "Tem um projeto em mente? Vamos conversar.",
-    "cta": "Estou aberto a novas oportunidades e problemas interessantes. Envie uma mensagem e responderei em breve.",
+    "cta": "Estou aberto a novas oportunidades e desafios técnicos interessantes. Me escreva e responderei em breve.",
     "sayHello": "Diga olá",
-    "pageTitle": "Contato",
-    "pageSubtitle": "Tem um projeto em mente ou quer colaborar? Envie uma mensagem.",
-    "formIntro": "A melhor forma de contato é por email. Costumo responder em alguns dias."
+    "pageTitle": "Entre em contato",
+    "pageSubtitle": "Tem um projeto em mente ou quer colaborar? Me escreva.",
+    "formIntro": "A melhor forma de me contatar é por e-mail. Normalmente respondo em alguns dias."
   },
   "footer": {
-    "tagline": "Arquiteto Frontend Sênior e Engenheiro UX. Experiências web rápidas, acessíveis e escaláveis.",
+    "tagline": "Engenheiro de Software Full Stack. Construindo sistemas de backend escaláveis e plataformas web.",
     "navigation": "Navegação",
-    "getInTouch": "Contato",
-    "getInTouchDesc": "Aberto a novas oportunidades e problemas interessantes.",
+    "getInTouch": "Entre em contato",
+    "getInTouchDesc": "Aberto a novas oportunidades e desafios técnicos interessantes.",
     "sayHello": "Diga olá",
-    "copyright": "© {year} Portfólio."
+    "copyright": "© {year} Pipe Rincón."
   },
   "notFound": {
     "title": "404",
@@ -154,25 +154,25 @@
     "fr": "Français"
   },
   "projectItems": {
-    "real-time-dashboard": {
-      "title": "Painel de analytics em tempo real",
-      "description": "Painel de alto desempenho para monitorar métricas do sistema com atualizações WebSocket ao vivo e gráficos interativos."
+    "mobility-metrics-platform": {
+      "title": "Plataforma de Métricas de Mobilidade",
+      "description": "Plataforma full stack para monitoramento de mobilidade em tempo real — app Flutter e painel web com NestJS."
     },
-    "design-system": {
-      "title": "Sistema de design de componentes",
-      "description": "Sistema de design acessível e tematizável com mais de 50 componentes e site de documentação completo."
+    "virtual-album": {
+      "title": "Álbum Virtual Copa do Mundo",
+      "description": "Plataforma gamificada de colecionáveis digitais com mecânicas sociais, sistema de convites e recompensas."
     },
-    "mobile-payment-flow": {
-      "title": "Fluxo de pagamento mobile-first",
-      "description": "Experiência de checkout otimizada para mobile com métodos salvos e pagamento com um toque."
+    "community-marketplace": {
+      "title": "Marketplace Comunitário",
+      "description": "Marketplace hiperlocal com geolocalização, descoberta de lojas próximas e gestão de pedidos."
     },
-    "api-gateway": {
-      "title": "API Gateway interno",
-      "description": "Gateway central para tráfego entre serviços e APIs externas com autenticação, limites de taxa e observabilidade."
+    "atec-lms": {
+      "title": "Sistema de Gestão de Aprendizagem ATEC",
+      "description": "LMS completo para gestão de cursos, distribuição de conteúdo e acompanhamento do progresso de aprendizagem."
     },
-    "docs-platform": {
-      "title": "Plataforma de documentação para desenvolvedores",
-      "description": "Documentação versionada com busca, exemplos de código e referência interativa de API."
+    "wheels-gogo": {
+      "title": "Wheels Gogo",
+      "description": "App de carona que reduz custos de deslocamento e emissões conectando motoristas e passageiros."
     }
   }
 }

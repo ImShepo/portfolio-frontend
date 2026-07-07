@@ -4,7 +4,7 @@
     "projects": "Projects",
     "about": "About",
     "contact": "Contact",
-    "logo": "Portfolio",
+    "logo": "Pipe Rincón",
     "openMenu": "Open menu",
     "closeMenu": "Close menu"
   },
@@ -12,68 +12,68 @@
     "skipToContent": "Skip to main content"
   },
   "hero": {
-    "eyebrow": "Senior Frontend Architect",
-    "title": "I build conversion-focused web experiences that are fast, accessible, and scalable.",
-    "description": "From design systems to revenue-critical product flows, I help teams ship cleaner UX and measurable outcomes.",
-    "seeCaseStudies": "See case studies",
+    "eyebrow": "Full Stack Software Engineer",
+    "title": "I build scalable backend systems and web platforms for enterprise-grade applications.",
+    "description": "From microservices architecture to real-time dashboards, I help teams deliver robust, maintainable software with clean design and measurable impact.",
+    "seeCaseStudies": "See my projects",
     "bookIntro": "Book a 20-min intro",
     "getInTouch": "Get in touch"
   },
   "outcomes": {
     "title": "Selected Outcomes",
-    "subtitle": "Impact-focused metrics from product and platform work.",
+    "subtitle": "Metrics from production work across enterprise platforms and personal projects.",
     "items": {
-      "lcp": "Faster LCP on core landing flows",
-      "checkout": "Higher mobile checkout completion",
-      "teams": "Product teams using shared design system",
-      "uptime": "Uptime on high-traffic dashboards"
+      "lcp": "Years of professional full stack experience",
+      "checkout": "Shipped projects across web and mobile",
+      "teams": "Enterprise platforms led as tech lead",
+      "uptime": "Human languages at professional level"
     }
   },
   "whatIDo": {
     "eyebrow": "What I Do",
-    "title": "Building product experiences that perform and convert.",
-    "subtitle": "A calm, focused process from speed to UX to architecture.",
+    "title": "Building robust backends and full stack products that scale.",
+    "subtitle": "A disciplined approach from architecture to deployment.",
     "steps": {
       "performance": {
-        "title": "Performance",
-        "body": "I reduce friction by targeting Core Web Vitals, removing render bottlenecks, and designing for fast perceived performance across real devices."
+        "title": "Backend Architecture",
+        "body": "I design scalable microservices and REST APIs using NestJS, Spring Boot and Node.js — with async messaging, SOLID principles, and clean architecture for long-term maintainability."
       },
       "ux": {
-        "title": "UX",
-        "body": "I build conversion-oriented interfaces with clean hierarchy, clear copy, and accessible interactions that help users act confidently."
+        "title": "Full Stack Development",
+        "body": "I build complete products end-to-end: backend APIs, web interfaces with React and Next.js, and mobile apps with Flutter — covering the full lifecycle from database schema to UI."
       },
       "architecture": {
-        "title": "Architecture",
-        "body": "I design scalable React and Next.js foundations that teams can ship on quickly without sacrificing code quality or maintainability."
+        "title": "Cloud & Integration",
+        "body": "I deploy services on AWS, Railway and Docker, integrate payment gateways, and connect complex systems with event-driven patterns and RabbitMQ for reliable async processing."
       }
     }
   },
   "featuredCaseStudy": {
     "eyebrow": "Featured Project",
-    "title": "Mobile Payment Flow Story",
-    "subtitle": "A structured case study through problem, solution, and measurable result.",
+    "title": "Enterprise E-Billing Platform Migration",
+    "subtitle": "Leading the backend team through a microservices redesign of a mission-critical billing system.",
     "steps": {
       "problem": {
         "title": "Problem",
-        "body": "A high-traffic product had rising drop-off on mobile checkout and unclear failure states during payment redirects."
+        "body": "A high-demand enterprise billing platform was struggling with a monolithic architecture that made scaling, maintenance, and new feature delivery slow and risky."
       },
       "solution": {
         "title": "Solution",
-        "body": "I redesigned the checkout flow around trust, speed, and recovery, then implemented a resilient frontend state machine with measurable instrumentation."
+        "body": "I led the backend team and designed a microservices architecture with RabbitMQ for async event processing, applying SOLID principles and event-driven patterns to decouple the core billing modules."
       },
       "result": {
         "title": "Result",
-        "body": "Checkout completion increased by 23%, one-tap payment adoption reached 60% in 30 days, and support tickets tied to payment UX dropped."
+        "body": "The platform gained improved modularity, better fault isolation, faster deployment cycles for billing rules, and secure payment gateway integrations with risk analysis."
       }
     }
   },
   "projects": {
     "title": "Featured projects",
-    "subtitle": "A selection of recent work — from product dashboards to design systems.",
+    "subtitle": "A collection of backend, full stack, and mobile work.",
     "view": "View",
     "viewAll": "View all projects",
     "pageTitle": "Projects",
-    "pageSubtitle": "A collection of work across product, design systems, and infrastructure.",
+    "pageSubtitle": "A collection of work across backend systems, web platforms, and mobile apps.",
     "filterAll": "All",
     "categories": {
       "all": "All",
@@ -113,29 +113,29 @@
   },
   "about": {
     "title": "About",
-    "subtitle": "A bit about me and how I work.",
-    "paragraph1": "I'm a Senior Frontend Architect with a focus on building fast, accessible, and maintainable web applications. I care deeply about design systems, performance budgets, and developer experience — and I believe the best products come from tight collaboration between design and engineering.",
-    "paragraph2": "My work spans from greenfield product development to scaling design systems and mentoring teams. I've led frontend efforts for products serving millions of users and have a track record of shipping with high Lighthouse scores and strong accessibility compliance.",
-    "paragraph3": "When I'm not coding, I'm usually reading about systems design, tinkering with side projects, or outdoors. I'm always open to interesting problems and new collaborations.",
+    "subtitle": "Full stack engineer building enterprise systems and web platforms from Tunja, Colombia.",
+    "paragraph1": "I'm a Full Stack Software Engineer with 4+ years of experience delivering production-grade web platforms and enterprise systems. I specialize in backend architecture and microservices, with strong skills across the full stack — from REST APIs and databases to React, Next.js, and Flutter mobile apps.",
+    "paragraph2": "I've led backend teams for enterprise-scale electronic billing systems, designed microservices and event-driven architectures, integrated payment gateways, and shipped real-time dashboards and mobile apps to Google Play. I enjoy working close to the business logic and am comfortable in both leadership and hands-on engineering roles.",
+    "paragraph3": "I'm self-driven and passionate about continuous learning — including AI-assisted development workflows. I speak Spanish natively, English at C1 level, and have working knowledge of Portuguese and French. I'm always open to new challenges and meaningful collaborations.",
     "skillsTitle": "Skills",
     "experienceTitle": "Experience"
   },
   "contact": {
     "title": "Get in touch",
     "subtitle": "Have a project in mind? Let's talk.",
-    "cta": "I'm open to new opportunities and interesting problems. Drop me a line and I'll get back to you.",
+    "cta": "I'm open to new opportunities and interesting technical challenges. Drop me a line and I'll get back to you.",
     "sayHello": "Say hello",
     "pageTitle": "Get in touch",
-    "pageSubtitle": "Have a project in mind or want to collaborate? Drop me a line.",
+    "pageSubtitle": "Have a project in mind or want to collaborate? Write me.",
     "formIntro": "The best way to reach me is by email. I typically respond within a couple of days."
   },
   "footer": {
-    "tagline": "Senior Frontend Architect & UX Engineer. Building fast, accessible, and scalable web experiences.",
+    "tagline": "Full Stack Software Engineer. Building scalable backend systems and web platforms.",
     "navigation": "Navigation",
     "getInTouch": "Get in touch",
-    "getInTouchDesc": "Open to new opportunities and interesting problems.",
+    "getInTouchDesc": "Open to new opportunities and interesting technical challenges.",
     "sayHello": "Say hello",
-    "copyright": "© {year} Portfolio."
+    "copyright": "© {year} Pipe Rincón."
   },
   "notFound": {
     "title": "404",
@@ -154,25 +154,25 @@
     "fr": "Français"
   },
   "projectItems": {
-    "real-time-dashboard": {
-      "title": "Real-Time Analytics Dashboard",
-      "description": "High-performance dashboard for monitoring system metrics with live WebSocket updates and interactive charts."
+    "mobility-metrics-platform": {
+      "title": "Mobility Metrics Platform",
+      "description": "Full stack platform for real-time mobility monitoring — Flutter mobile app and NestJS web admin panel."
     },
-    "design-system": {
-      "title": "Component Design System",
-      "description": "Accessible, themable design system with 50+ components and full documentation site."
+    "virtual-album": {
+      "title": "Virtual World Cup Album",
+      "description": "Gamified digital collectibles platform with social mechanics, referral system, and rewards."
     },
-    "mobile-payment-flow": {
-      "title": "Mobile-First Payment Flow",
-      "description": "Streamlined checkout experience for mobile with saved methods and one-tap pay."
+    "community-marketplace": {
+      "title": "Community Marketplace",
+      "description": "Hyperlocal marketplace with geolocation, nearby store discovery, and order management."
     },
-    "api-gateway": {
-      "title": "Internal API Gateway",
-      "description": "Central gateway for service-to-service and external API traffic with auth, rate limits, and observability."
+    "atec-lms": {
+      "title": "ATEC Learning Management System",
+      "description": "Full-featured LMS for course management, content delivery, and learning progress tracking."
     },
-    "docs-platform": {
-      "title": "Developer Docs Platform",
-      "description": "Searchable, versioned documentation with code samples and interactive API reference."
+    "wheels-gogo": {
+      "title": "Wheels Gogo",
+      "description": "Carpooling app reducing commuting costs and emissions by connecting drivers and passengers."
     }
   }
 }
