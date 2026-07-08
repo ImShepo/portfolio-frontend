@@ -1,0 +1,179 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Progetti",
+    "about": "Chi sono",
+    "contact": "Contatti",
+    "logo": "Pipe Rincón",
+    "openMenu": "Apri menu",
+    "closeMenu": "Chiudi menu"
+  },
+  "a11y": {
+    "skipToContent": "Vai al contenuto principale"
+  },
+  "hero": {
+    "eyebrow": "Ingegnere del Software Full Stack",
+    "title": "Costruisco sistemi backend scalabili e piattaforme web per applicazioni enterprise.",
+    "description": "Dalle architetture a microservizi alle dashboard in tempo reale, aiuto i team a consegnare software robusto, manutenibile e con impatto misurabile.",
+    "seeCaseStudies": "Vedi i miei progetti",
+    "bookIntro": "Prenota un intro di 20 min",
+    "getInTouch": "Contattami"
+  },
+  "outcomes": {
+    "title": "Risultati selezionati",
+    "subtitle": "Metriche da lavoro in produzione su piattaforme enterprise e progetti personali.",
+    "items": {
+      "lcp": "Anni di esperienza professionale full stack",
+      "checkout": "Progetti rilasciati su web e mobile",
+      "teams": "Piattaforme enterprise guidate come tech lead",
+      "uptime": "Lingue a livello professionale"
+    }
+  },
+  "whatIDo": {
+    "eyebrow": "Cosa faccio",
+    "title": "Costruisco backend robusti e prodotti full stack che scalano.",
+    "subtitle": "Un approccio disciplinato dall'architettura al deployment.",
+    "steps": {
+      "performance": {
+        "title": "Architettura Backend",
+        "body": "Progetto microservizi scalabili e API REST con NestJS, Spring Boot e Node.js — con messaggistica asincrona, principi SOLID e clean architecture per una manutenibilità a lungo termine."
+      },
+      "ux": {
+        "title": "Sviluppo Full Stack",
+        "body": "Costruisco prodotti end-to-end: API backend, interfacce web con React e Next.js, e app mobile con Flutter — coprendo l'intero ciclo dallo schema del database all'interfaccia utente."
+      },
+      "architecture": {
+        "title": "Cloud e Integrazione",
+        "body": "Distribuisco servizi su AWS, Railway e Docker, integro gateway di pagamento e collego sistemi complessi con pattern event-driven e RabbitMQ per un'elaborazione asincrona affidabile."
+      }
+    }
+  },
+  "featuredCaseStudy": {
+    "eyebrow": "Progetto in evidenza",
+    "title": "Migrazione della piattaforma di fatturazione elettronica enterprise",
+    "subtitle": "Guida del team backend nel redesign a microservizi di un sistema di fatturazione mission-critical.",
+    "steps": {
+      "problem": {
+        "title": "Problema",
+        "body": "Una piattaforma di fatturazione enterprise ad alta domanda soffriva di un'architettura monolitica che rendeva lento e rischioso lo scaling, la manutenzione e la consegna di nuove funzionalità."
+      },
+      "solution": {
+        "title": "Soluzione",
+        "body": "Ho guidato il team backend e progettato un'architettura a microservizi con RabbitMQ per l'elaborazione asincrona degli eventi, applicando principi SOLID e pattern event-driven per disaccoppiare i moduli di fatturazione."
+      },
+      "result": {
+        "title": "Risultato",
+        "body": "La piattaforma ha guadagnato maggiore modularità, migliore isolamento dei guasti, cicli di deploy più rapidi per le regole di fatturazione e integrazioni sicure dei gateway di pagamento con analisi del rischio."
+      }
+    }
+  },
+  "projects": {
+    "title": "Progetti in evidenza",
+    "subtitle": "Una raccolta di lavori su sistemi backend, piattaforme web e app mobile.",
+    "view": "Vedi",
+    "viewAll": "Vedi tutti i progetti",
+    "pageTitle": "Progetti",
+    "pageSubtitle": "Una raccolta di lavori su sistemi backend, piattaforme web e app mobile.",
+    "filterAll": "Tutti",
+    "categories": {
+      "all": "Tutti",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full-stack",
+      "infrastructure": "Infrastruttura"
+    },
+    "noMatch": "Nessun progetto corrisponde a questo filtro.",
+    "backToProjects": "Torna ai progetti",
+    "code": "Codice",
+    "demo": "Demo",
+    "techStack": "Stack tecnologico",
+    "architecture": "Architettura",
+    "challenges": "Sfide",
+    "results": "Risultati",
+    "problem": "Problema",
+    "solution": "Soluzione",
+    "viewAllProjects": "Vedi tutti i progetti"
+  },
+  "projectDetail": {
+    "defineChallenge": "Definire la sfida principale",
+    "translateSolution": "Tradurre i vincoli in una soluzione scalabile",
+    "shipOutcomes": "Consegnare risultati misurabili",
+    "processEyebrow": "Processo",
+    "processTitle": "Come è stato eseguito il lavoro",
+    "discover": "Scoprire",
+    "build": "Costruire",
+    "validate": "Validare",
+    "steps": {
+      "insight": "Insight",
+      "target": "Obiettivo",
+      "process": "Processo",
+      "impact": "Impatto",
+      "next": "Prossimo"
+    }
+  },
+  "about": {
+    "title": "Chi sono",
+    "subtitle": "Ingegnere full stack che costruisce sistemi enterprise e piattaforme web da Tunja, Colombia.",
+    "paragraph1": "Sono un Ingegnere del Software Full Stack con oltre 4 anni di esperienza nella consegna di piattaforme web e sistemi enterprise in produzione. Mi specializzo in architettura backend e microservizi, con solide competenze su tutto lo stack — dalle API REST e database a React, Next.js e app mobile Flutter.",
+    "paragraph2": "Ho guidato team backend per sistemi di fatturazione elettronica su scala enterprise, progettato architetture a microservizi e event-driven, integrato gateway di pagamento e rilasciato dashboard in tempo reale e app mobile su Google Play. Mi piace lavorare vicino alla logica di business e mi sento a mio agio sia in ruoli di leadership sia nell'ingegneria operativa.",
+    "paragraph3": "Sono autodidatta e appassionato di apprendimento continuo — inclusi i flussi di sviluppo assistiti dall'IA. Parlo spagnolo come madrelingua, inglese a livello C1 e ho conoscenze di portoghese, francese e italiano. Sono sempre aperto a nuove sfide e collaborazioni significative.",
+    "skillsTitle": "Competenze",
+    "experienceTitle": "Esperienza"
+  },
+  "contact": {
+    "title": "Contattami",
+    "subtitle": "Hai un progetto in mente? Parliamone.",
+    "cta": "Sono aperto a nuove opportunità e sfide tecniche interessanti. Scrivimi e ti risponderò al più presto.",
+    "sayHello": "Saluta",
+    "pageTitle": "Contattami",
+    "pageSubtitle": "Hai un progetto in mente o vuoi collaborare? Scrivimi.",
+    "formIntro": "Il modo migliore per contattarmi è via email. Di solito rispondo entro un paio di giorni."
+  },
+  "footer": {
+    "tagline": "Ingegnere del Software Full Stack. Costruisco sistemi backend scalabili e piattaforme web.",
+    "navigation": "Navigazione",
+    "getInTouch": "Contattami",
+    "getInTouchDesc": "Aperto a nuove opportunità e sfide tecniche interessanti.",
+    "sayHello": "Saluta",
+    "copyright": "© {year} Pipe Rincón."
+  },
+  "notFound": {
+    "title": "404",
+    "description": "Questa pagina non è stata trovata.",
+    "backHome": "Torna alla home"
+  },
+  "theme": {
+    "light": "Modalità chiara",
+    "dark": "Modalità scura",
+    "system": "Sistema"
+  },
+  "locale": {
+    "en": "English",
+    "es": "Español",
+    "pt": "Português",
+    "fr": "Français",
+    "it": "Italiano"
+  },
+  "projectItems": {
+    "mobility-metrics-platform": {
+      "title": "Piattaforma Metriche di Mobilità",
+      "description": "Piattaforma full stack per il monitoraggio della mobilità in tempo reale — app mobile Flutter e pannello admin web con NestJS."
+    },
+    "virtual-album": {
+      "title": "Album Virtuale Coppa del Mondo",
+      "description": "Piattaforma gamificata di collezionabili digitali con meccaniche social, sistema di referral e ricompense."
+    },
+    "community-marketplace": {
+      "title": "Marketplace Comunitario",
+      "description": "Marketplace iperlocale con geolocalizzazione, scoperta di negozi vicini e gestione degli ordini."
+    },
+    "atec-lms": {
+      "title": "Sistema di Gestione dell'Apprendimento ATEC",
+      "description": "LMS completo per la gestione dei corsi, l'erogazione dei contenuti e il monitoraggio dei progressi di apprendimento."
+    },
+    "wheels-gogo": {
+      "title": "Wheels Gogo",
+      "description": "App di carpooling che riduce costi di spostamento ed emissioni collegando conducenti e passeggeri."
+    }
+  }
+}

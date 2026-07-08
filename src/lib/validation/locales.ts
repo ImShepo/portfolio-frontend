@@ -1,6 +1,6 @@
 import { z } from "zod";
 
-export const localeCodeSchema = z.enum(["en", "es", "pt", "fr"]);
+export const localeCodeSchema = z.enum(["en", "es", "pt", "fr", "it"]);
 
 export function collectMessageKeys(value: unknown, prefix = ""): string[] {
   if (typeof value === "string") {
