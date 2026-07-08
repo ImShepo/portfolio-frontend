@@ -151,7 +151,8 @@
     "en": "English",
     "es": "Español",
     "pt": "Português",
-    "fr": "Français"
+    "fr": "Français",
+    "it": "Italiano"
   },
   "projectItems": {
     "mobility-metrics-platform": {

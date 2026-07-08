@@ -16,11 +16,12 @@ import en from "../../../locales/en.json";
 import es from "../../../locales/es.json";
 import pt from "../../../locales/pt.json";
 import fr from "../../../locales/fr.json";
+import it from "../../../locales/it.json";
 import projectsBase from "../../../content/projects.json";
 
 type Messages = typeof en;
 
-const LOCALE_MESSAGES: Record<Locale, Messages> = { en, es, pt, fr };
+const LOCALE_MESSAGES: Record<Locale, Messages> = { en, es, pt, fr, it };
 
 // ─── Contact links ───────────────────────────────────────────────────────────
 

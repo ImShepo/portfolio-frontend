@@ -5,6 +5,7 @@ import { useLocale, useTranslations } from "@/i18n/provider";
 import { cn } from "@/lib/utils";
 import type { Locale } from "@/i18n/messages";
 import { localeNames } from "@/i18n/messages";
+import { LOCALES } from "@/lib/locales";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,7 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
-const locales: Locale[] = ["en", "es", "pt", "fr"];
+const locales: Locale[] = [...LOCALES];
 
 export function LanguageSwitcher({
   className,

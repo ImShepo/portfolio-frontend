@@ -12,7 +12,7 @@ import {
 } from "react";
 import { useRouter } from "next/navigation";
 import { messages, defaultLocale, type Locale, type Messages } from "./messages";
-import { LOCALE_COOKIE } from "@/lib/locales";
+import { LOCALE_COOKIE, isLocale } from "@/lib/locales";
 
 const STORAGE_KEY = "portfolio-locale";
 
@@ -38,8 +38,7 @@ function getStoredLocale(): Locale {
   if (typeof window === "undefined") return defaultLocale;
   try {
     const stored = localStorage.getItem(STORAGE_KEY);
-    if (stored && (stored === "en" || stored === "es" || stored === "pt" || stored === "fr"))
-      return stored;
+    if (stored && isLocale(stored)) return stored;
   } catch {
     // ignore
   }

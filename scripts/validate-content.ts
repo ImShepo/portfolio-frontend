@@ -26,7 +26,7 @@ function validateProjects(): void {
 }
 
 function validateLocales(): void {
-  const codes = ["en", "es", "pt", "fr"] as const;
+  const codes = ["en", "es", "pt", "fr", "it"] as const;
   const parsed: Record<string, Record<string, unknown>> = {};
 
   for (const code of codes) {
@@ -40,7 +40,7 @@ function validateLocales(): void {
 
   const { en, ...others } = parsed;
   assertLocaleKeyParity(en, others);
-  console.log("✓ locale key parity across en, es, pt, fr");
+  console.log("✓ locale key parity across en, es, pt, fr, it");
 }
 
 function main(): void {
