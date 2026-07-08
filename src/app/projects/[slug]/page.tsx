@@ -1,7 +1,6 @@
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { getProjectForRequest, getProjectSlugs } from "@/lib/content";
-import { getServerTranslations } from "@/lib/i18n-server";
 import { projectField } from "@/lib/cms/resolve-project";
 import { ProjectDetailClient } from "./project-detail-client";
 

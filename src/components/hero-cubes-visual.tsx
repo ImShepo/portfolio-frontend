@@ -2,7 +2,7 @@
 
 import { motion, useMotionValue, useReducedMotion, useTransform, type MotionValue } from "framer-motion";
 import { useTheme } from "next-themes";
-import { useEffect, useState } from "react";
+import { useMounted } from "@/hooks/use-mounted";
 
 const W = 200;
 const HW = W / 2;
@@ -311,13 +311,11 @@ type HeroCubesVisualProps = {
 
 export function HeroCubesVisual({ scrollProgress }: HeroCubesVisualProps) {
   const { resolvedTheme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+  const mounted = useMounted();
   const reduceMotion = useReducedMotion();
   const staticProgress = useMotionValue(0);
   const progress = scrollProgress && !reduceMotion ? scrollProgress : staticProgress;
   const scrollEnabled = Boolean(scrollProgress) && !reduceMotion;
-
-  useEffect(() => setMounted(true), []);
 
   const isDark = !mounted || resolvedTheme === "dark";
   const reflectTone = isDark ? "dark" : "light";
