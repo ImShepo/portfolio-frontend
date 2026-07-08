@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Portfolio Oscar Felipe",
   },
   icons: {
-    icon: [{ url: "/branding/logo-mark.png", type: "image/png" }],
+    icon: [{ url: "/favicon.ico", type: "image/x-icon" }],
     shortcut: "/branding/logo-mark.png",
     apple: "/branding/logo-mark.png",
   },

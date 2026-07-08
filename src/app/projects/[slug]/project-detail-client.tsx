@@ -173,15 +173,6 @@ export function ProjectDetailClient({ project, projectEn }: ProjectDetailClientP
         steps={problemSteps}
         heightClassName="h-[240vh]"
         compactTail
-        handoffStart={0.74}
-        tailSlot={
-          <div className="mx-auto max-w-5xl text-center">
-            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-foreground">
-              {t("projectDetail.processEyebrow")}
-            </p>
-            <h2 className="mt-3 text-heading text-foreground">{t("projectDetail.processTitle")}</h2>
-          </div>
-        }
       />
 
       <section className="-mt-6 px-5 pb-10 pt-0 sm:px-8 md:pb-14">
