@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import { motion, useInView, useReducedMotion } from "framer-motion";
+import { Section } from "@/components/section";
 import { fadeInUp, staggerContainer, viewportOnce } from "@/lib/animations";
 import { useTranslations } from "@/i18n/provider";
 import { useCmsText } from "@/hooks/use-cms-text";
@@ -55,49 +56,39 @@ export function SelectedOutcomes({ cms, cmsEn }: SelectedOutcomesProps) {
   const cmsText = useCmsText();
 
   const outcomes = cms?.items ?? [
-    { value: 40, suffix: "%", label: t("outcomes.items.lcp") },
-    { value: 23, suffix: "%", label: t("outcomes.items.checkout") },
-    { value: 15, suffix: "+", label: t("outcomes.items.teams") },
-    { value: 99.9, suffix: "%", label: t("outcomes.items.uptime") },
+    { value: 4, suffix: "+", label: t("outcomes.items.lcp") },
+    { value: 8, suffix: "+", label: t("outcomes.items.checkout") },
+    { value: 3, suffix: "+", label: t("outcomes.items.teams") },
+    { value: 5, suffix: "", label: t("outcomes.items.uptime") },
   ];
 
   return (
-    <section
-      className="px-5 py-16 sm:px-8 md:py-20 mx-auto max-w-6xl w-full"
-      aria-labelledby="selected-outcomes-title"
+    <Section
+      id="outcomes"
+      title={cmsText(cms?.title, t("outcomes.title"), cmsEn?.title)}
+      subtitle={cmsText(cms?.subtitle, t("outcomes.subtitle"), cmsEn?.subtitle)}
+      className="max-w-7xl"
     >
-      <motion.header
-        id="selected-outcomes-title"
-        className="mb-10 text-center"
-        initial="hidden"
-        whileInView="visible"
-        viewport={viewportOnce}
-        variants={fadeInUp}
-      >
-        <h2 className="text-heading text-foreground">
-          {cmsText(cms?.title, t("outcomes.title"), cmsEn?.title)}
-        </h2>
-        <p className="mt-4 text-body text-muted-foreground">
-          {cmsText(cms?.subtitle, t("outcomes.subtitle"), cmsEn?.subtitle)}
-        </p>
-      </motion.header>
-
       <motion.ul
-        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4"
+        className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-5"
         initial="hidden"
         whileInView="visible"
         viewport={viewportOnce}
         variants={staggerContainer}
       >
         {outcomes.map((item) => (
-          <motion.li key={item.label} variants={fadeInUp} className="rounded-2xl border border-border bg-card p-6">
-            <p className="text-3xl font-bold tracking-tight text-foreground">
-              <CountUp target={item.value} suffix={item.suffix} />
-            </p>
-            <p className="mt-2 text-caption">{item.label}</p>
+          <motion.li key={item.label} variants={fadeInUp} className="h-full">
+            <div className="glass-card flex h-full min-h-[8.5rem] flex-col justify-center rounded-xl px-6 py-7 sm:px-7">
+              <p className="text-3xl font-bold tracking-tight text-foreground sm:text-[2rem]">
+                <CountUp target={item.value} suffix={item.suffix} />
+              </p>
+              <p className="mt-3 text-sm leading-relaxed text-[var(--color-text-muted)]">
+                {item.label}
+              </p>
+            </div>
           </motion.li>
         ))}
       </motion.ul>
-    </section>
+    </Section>
   );
 }

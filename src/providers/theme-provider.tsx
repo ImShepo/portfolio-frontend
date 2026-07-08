@@ -9,10 +9,10 @@ export function ThemeProvider({
   return (
     <NextThemesProvider
       attribute="class"
-      defaultTheme="system"
-      enableSystem
+      defaultTheme="dark"
+      enableSystem={false}
       disableTransitionOnChange={false}
-      storageKey="portfolio-theme"
+      storageKey="shepo-theme"
       {...props}
     >
       {children}

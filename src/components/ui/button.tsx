@@ -7,7 +7,7 @@ const base =
   "inline-flex items-center justify-center gap-2 rounded-xl font-semibold transition-all duration-250 ease-out focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 active:scale-[0.98]";
 const variants = {
   primary:
-    "bg-foreground text-primary-foreground hover:bg-foreground/90 hover:scale-[1.03] shadow-sm hover:shadow-md focus-visible:ring-foreground",
+    "bg-primary text-primary-foreground hover:bg-[var(--color-accent-bright)] hover:scale-[1.03] shadow-sm hover:shadow-[0_0_20px_var(--color-accent-glow)] focus-visible:ring-accent",
   secondary:
     "bg-secondary text-secondary-foreground hover:bg-secondary/80 hover:scale-[1.03] hover:shadow-sm focus-visible:ring-border",
   ghost:
