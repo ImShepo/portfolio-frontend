@@ -9,16 +9,20 @@ import { useCmsText } from "@/hooks/use-cms-text";
 import type { HomeContent } from "@/lib/cms/schemas";
 
 function CountUp({ target, suffix }: { target: number; suffix: string }) {
-  const [value, setValue] = useState(0);
   const elementRef = useRef<HTMLSpanElement | null>(null);
-  const inView = useInView(elementRef, { once: true, margin: "-80px" });
+  const inView = useInView(elementRef, { once: true, amount: 0.35 });
   const hasStartedRef = useRef(false);
   const reduceMotion = useReducedMotion();
+  const [value, setValue] = useState(0);
 
   useEffect(() => {
     if (!inView || hasStartedRef.current) return;
     hasStartedRef.current = true;
-    if (reduceMotion) return;
+
+    if (reduceMotion) {
+      setValue(target);
+      return;
+    }
 
     const duration = 900;
     const start = performance.now();
@@ -38,10 +42,10 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
   }, [inView, reduceMotion, target]);
 
   const display = useMemo(() => {
-    const output = reduceMotion && inView ? target : value;
+    const output = reduceMotion ? target : value;
     if (Number.isInteger(target)) return `${Math.round(output)}${suffix}`;
     return `${output.toFixed(1)}${suffix}`;
-  }, [inView, reduceMotion, suffix, target, value]);
+  }, [reduceMotion, suffix, target, value]);
 
   return <span ref={elementRef}>{display}</span>;
 }
