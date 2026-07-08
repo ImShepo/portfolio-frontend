@@ -62,8 +62,8 @@ export function ProjectsGrid({ projects, projectsEn }: ProjectsGridProps) {
             aria-pressed={filter === cat}
             className={`rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] ${
               filter === cat
-                ? "bg-foreground text-primary-foreground shadow-md"
-                : "bg-muted text-muted-foreground shadow-sm hover:bg-muted/80 hover:shadow"
+                ? "bg-accent text-white font-semibold shadow-[0_0_18px_var(--color-accent-glow)]"
+                : "border border-[var(--color-border)] bg-[var(--color-surface)] text-[var(--color-text-secondary)] hover:border-[var(--color-accent)]/35 hover:text-foreground"
             }`}
           >
             {t(categoryKeys[cat])}

@@ -16,6 +16,18 @@ type ScrollStorySectionProps = {
   steps: StoryStep[];
 };
 
+function storyStepKeyframes(index: number, total: number) {
+  const segment = 1 / total;
+  const crossfade = segment * 0.35;
+
+  const start = index === 0 ? 0 : index * segment - crossfade;
+  const enterEnd = index * segment + segment * 0.1;
+  const exitStart = (index + 1) * segment - crossfade;
+  const end = index === total - 1 ? 1 : (index + 1) * segment + crossfade * 0.4;
+
+  return { start, enterEnd, exitStart, end };
+}
+
 function StoryStepLayer({
   progress,
   index,
@@ -27,18 +39,16 @@ function StoryStepLayer({
   total: number;
   step: StoryStep;
 }) {
-  const start = index / total;
-  const middle = (index + 0.5) / total;
-  const end = (index + 1) / total;
+  const { start, enterEnd, exitStart, end } = storyStepKeyframes(index, total);
 
-  const opacity = useTransform(progress, [start, middle, end], [0, 1, 0]);
-  const y = useTransform(progress, [start, middle, end], [24, 0, -16]);
-  const scale = useTransform(progress, [start, middle, end], [0.985, 1, 0.99]);
+  const opacity = useTransform(progress, [start, enterEnd, exitStart, end], [0, 1, 1, 0]);
+  const y = useTransform(progress, [start, enterEnd, exitStart, end], [64, 0, 0, -140]);
+  const scale = useTransform(progress, [start, enterEnd, exitStart, end], [0.98, 1, 1, 0.96]);
 
   return (
     <motion.article
       className="absolute inset-0 flex items-center justify-center px-5 sm:px-8"
-      style={{ opacity, y, scale }}
+      style={{ opacity, y, scale, zIndex: index + 1 }}
     >
       <div className="mx-auto max-w-3xl text-center">
         <h3 className="text-display text-foreground">{step.title}</h3>

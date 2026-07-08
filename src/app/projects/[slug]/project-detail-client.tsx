@@ -2,6 +2,8 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 import { Github, ExternalLink, ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslations } from "@/i18n/provider";
@@ -93,50 +95,74 @@ export function ProjectDetailClient({ project, projectEn }: ProjectDetailClientP
     },
   ];
 
+  const heroRef = useRef<HTMLElement | null>(null);
+  const { scrollYProgress } = useScroll({
+    target: heroRef,
+    offset: ["start start", "end end"],
+  });
+  const heroImageScale = useTransform(scrollYProgress, [0, 1], [1, 1.08]);
+  const heroContentY = useTransform(scrollYProgress, [0, 1], [0, -48]);
+  const heroContentOpacity = useTransform(scrollYProgress, [0, 0.85, 1], [1, 0.92, 0.75]);
+
   return (
     <article className="min-h-screen">
-      <section className="relative h-[200vh]">
+      <section ref={heroRef} className="relative h-[145vh]">
         <div className="sticky top-0 h-screen w-full overflow-hidden bg-zinc-900">
-          <Image
-            src={getProjectImageSrc(project.image)}
-            alt={title}
-            fill
-            className="object-cover opacity-50"
-            priority
-            sizes="100vw"
-          />
+          <motion.div className="absolute inset-0" style={{ scale: heroImageScale }}>
+            <Image
+              src={getProjectImageSrc(project.image)}
+              alt={title}
+              fill
+              className="object-cover opacity-50"
+              priority
+              sizes="100vw"
+            />
+          </motion.div>
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/10" />
-          <div className="absolute inset-0 flex items-center justify-center px-5 sm:px-8">
-            <div className="mx-auto w-full max-w-4xl text-center">
-              <Link
-                href="/projects"
-                className="inline-flex items-center gap-2 text-caption text-white/80 hover:text-white mb-6 transition-colors"
+
+          <motion.div
+            className="relative z-10 flex h-full flex-col"
+            style={{ y: heroContentY, opacity: heroContentOpacity }}
+          >
+            <div className="px-5 pt-24 sm:px-8">
+              <Button
+                asChild
+                variant="heroSecondary"
+                size="sm"
+                className="gap-2 border-white/35 bg-white/15 text-white shadow-lg backdrop-blur-md hover:border-white/55 hover:bg-white/25 hover:text-white"
               >
-                <ArrowLeft size={16} aria-hidden />
-                {t("projects.backToProjects")}
-              </Link>
-              <h1 className="text-display text-white drop-shadow">{title}</h1>
-              <p className="mx-auto mt-5 max-w-2xl text-body-lg text-white/90">{description}</p>
-              <div className="mt-6 flex flex-wrap justify-center gap-3">
-                {project.github && (
-                  <Button asChild variant="secondary" size="sm" className="gap-2">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
-                      <Github size={16} aria-hidden />
-                      {t("projects.code")}
-                    </a>
-                  </Button>
-                )}
-                {project.demo && (
-                  <Button asChild variant="secondary" size="sm" className="gap-2">
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink size={16} aria-hidden />
-                      {t("projects.demo")}
-                    </a>
-                  </Button>
-                )}
+                <Link href="/projects">
+                  <ArrowLeft size={16} aria-hidden />
+                  {t("projects.backToProjects")}
+                </Link>
+              </Button>
+            </div>
+
+            <div className="flex flex-1 items-center justify-center px-5 pb-16 sm:px-8">
+              <div className="mx-auto w-full max-w-4xl text-center">
+                <h1 className="text-display text-white drop-shadow">{title}</h1>
+                <p className="mx-auto mt-5 max-w-2xl text-body-lg text-white/90">{description}</p>
+                <div className="mt-6 flex flex-wrap justify-center gap-3">
+                  {project.github && (
+                    <Button asChild variant="secondary" size="sm" className="gap-2">
+                      <a href={project.github} target="_blank" rel="noopener noreferrer">
+                        <Github size={16} aria-hidden />
+                        {t("projects.code")}
+                      </a>
+                    </Button>
+                  )}
+                  {project.demo && (
+                    <Button asChild variant="secondary" size="sm" className="gap-2">
+                      <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink size={16} aria-hidden />
+                        {t("projects.demo")}
+                      </a>
+                    </Button>
+                  )}
+                </div>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </section>
 
@@ -145,29 +171,39 @@ export function ProjectDetailClient({ project, projectEn }: ProjectDetailClientP
         eyebrow={t("projects.problem")}
         title={t("projectDetail.defineChallenge")}
         steps={problemSteps}
-        heightClassName="h-[300vh]"
+        heightClassName="h-[240vh]"
+        compactTail
+        handoffStart={0.74}
+        tailSlot={
+          <div className="mx-auto max-w-5xl text-center">
+            <p className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-foreground">
+              {t("projectDetail.processEyebrow")}
+            </p>
+            <h2 className="mt-3 text-heading text-foreground">{t("projectDetail.processTitle")}</h2>
+          </div>
+        }
       />
 
-      <section className="px-5 py-20 sm:px-8 md:py-24">
+      <section className="-mt-6 px-5 pb-10 pt-0 sm:px-8 md:pb-14">
         <div className="mx-auto max-w-5xl">
           <header className="text-center">
             <p className="text-sm font-semibold uppercase tracking-[0.14em] text-muted-foreground">
               {t("projectDetail.processEyebrow")}
             </p>
-            <h2 className="mt-4 text-heading text-foreground">{t("projectDetail.processTitle")}</h2>
+            <h2 className="mt-3 text-heading text-foreground">{t("projectDetail.processTitle")}</h2>
           </header>
-          <div className="mt-10 grid gap-6 md:grid-cols-3">
-            <article className="rounded-2xl border border-border bg-card p-6">
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <article className="rounded-2xl border border-border bg-card p-5">
               <h3 className="text-heading-sm text-foreground">{t("projectDetail.discover")}</h3>
-              <p className="mt-3 text-body text-muted-foreground">{longDescription}</p>
+              <p className="mt-2 text-body text-muted-foreground">{longDescription}</p>
             </article>
-            <article className="rounded-2xl border border-border bg-card p-6">
+            <article className="rounded-2xl border border-border bg-card p-5">
               <h3 className="text-heading-sm text-foreground">{t("projectDetail.build")}</h3>
-              <p className="mt-3 text-body text-muted-foreground">{solution || architecture}</p>
+              <p className="mt-2 text-body text-muted-foreground">{solution || architecture}</p>
             </article>
-            <article className="rounded-2xl border border-border bg-card p-6">
+            <article className="rounded-2xl border border-border bg-card p-5">
               <h3 className="text-heading-sm text-foreground">{t("projectDetail.validate")}</h3>
-              <p className="mt-3 text-body text-muted-foreground">{challenges}</p>
+              <p className="mt-2 text-body text-muted-foreground">{challenges}</p>
             </article>
           </div>
         </div>
@@ -179,6 +215,7 @@ export function ProjectDetailClient({ project, projectEn }: ProjectDetailClientP
         title={t("projectDetail.translateSolution")}
         steps={solutionSteps}
         heightClassName="h-[300vh]"
+        className="-mt-2"
       />
 
       <StickySection
@@ -186,7 +223,7 @@ export function ProjectDetailClient({ project, projectEn }: ProjectDetailClientP
         eyebrow={t("projects.results")}
         title={t("projectDetail.shipOutcomes")}
         steps={resultSteps}
-        heightClassName="h-[200vh]"
+        heightClassName="h-[280vh]"
       />
 
       <div className="mx-auto max-w-4xl px-5 py-14 sm:px-8 md:py-20">
