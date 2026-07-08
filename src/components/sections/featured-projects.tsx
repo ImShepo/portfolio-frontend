@@ -5,7 +5,6 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Section } from "@/components/section";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { getProjectImageSrc } from "@/lib/project-image";
 import { staggerContainer, fadeInUp, viewportOnce } from "@/lib/animations";
@@ -50,43 +49,39 @@ export function FeaturedProjectsSection({
         >
           {projects.map((project) => (
             <motion.li key={project.slug} variants={fadeInUp} className="h-full">
-              <Link href={`/projects/${project.slug}`} className="block h-full">
-                <div className="h-full">
-                  <Card variant="glass" className="h-full overflow-hidden">
-                    <div className="relative aspect-video w-full overflow-hidden rounded-t-2xl bg-muted">
-                      <Image
-                        src={getProjectImageSrc(project.image)}
-                        alt={projectText(project, "title")}
-                        fill
-                        className="object-cover"
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                      />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-transparent" />
-                      <span className="absolute right-4 top-4 flex h-10 w-10 items-center justify-center rounded-xl bg-surface/95 text-foreground shadow-md">
-                        <ArrowUpRight size={18} aria-hidden />
-                      </span>
+              <Link href={`/projects/${project.slug}`} className="block h-full group">
+                <div className="glass-card h-full overflow-hidden rounded-sm transition-all duration-300">
+                  <div className="relative aspect-video w-full overflow-hidden bg-[var(--color-surface-2)]">
+                    <Image
+                      src={getProjectImageSrc(project.image)}
+                      alt={projectText(project, "title")}
+                      fill
+                      className="object-cover opacity-80 group-hover:opacity-100 group-hover:scale-[1.02] transition-all duration-500"
+                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[var(--color-bg)]/80 via-transparent to-transparent" />
+                    <span className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-sm bg-[var(--color-accent)] text-white opacity-0 group-hover:opacity-100 transition-opacity duration-200 shadow-lg">
+                      <ArrowUpRight size={15} aria-hidden />
+                    </span>
+                  </div>
+                  <div className="p-5">
+                    <h3 className="text-sm font-semibold tracking-tight text-foreground group-hover:text-[var(--color-accent)] transition-colors">
+                      {projectText(project, "title")}
+                    </h3>
+                    <p className="text-caption line-clamp-2 mt-2 text-[var(--color-text-muted)]">
+                      {projectText(project, "description")}
+                    </p>
+                    <div className="mt-4 flex flex-wrap gap-1.5">
+                      {project.stack.slice(0, 3).map((tech) => (
+                        <span
+                          key={tech}
+                          className="rounded-sm bg-[var(--color-surface-2)] px-2 py-0.5 text-[0.7rem] font-medium tracking-wide text-[var(--color-text-muted)] border border-[var(--color-border)]"
+                        >
+                          {tech}
+                        </span>
+                      ))}
                     </div>
-                    <CardHeader>
-                      <h3 className="text-heading-sm text-foreground">
-                        {projectText(project, "title")}
-                      </h3>
-                      <p className="text-caption line-clamp-2 mt-1">
-                        {projectText(project, "description")}
-                      </p>
-                    </CardHeader>
-                    <CardContent className="pt-0">
-                      <div className="flex flex-wrap gap-2">
-                        {project.stack.slice(0, 3).map((tech) => (
-                          <span
-                            key={tech}
-                            className="rounded-lg bg-surface/80 px-2.5 py-1 text-xs font-medium text-muted-foreground border border-border/50"
-                          >
-                            {tech}
-                          </span>
-                        ))}
-                      </div>
-                    </CardContent>
-                  </Card>
+                  </div>
                 </div>
               </Link>
             </motion.li>
@@ -100,10 +95,14 @@ export function FeaturedProjectsSection({
         viewport={viewportOnce}
         variants={fadeInUp}
       >
-        <Button asChild variant="outline" size="lg">
+        <Button
+          asChild
+          size="lg"
+          className="btn-gradient-cta rounded-sm gap-2 px-8 font-semibold tracking-wide"
+        >
           <Link href="/projects" className="gap-2">
             {cmsText(cms?.viewAll, t("projects.viewAll"), cmsEn?.viewAll)}
-            <ArrowUpRight size={18} aria-hidden />
+            <ArrowUpRight size={17} aria-hidden />
           </Link>
         </Button>
       </motion.div>

@@ -36,7 +36,7 @@ export function ContactSection({ cms, cmsEn }: ContactSectionProps) {
         <p className="text-body-lg text-muted-foreground leading-relaxed mb-8">
           {cmsText(cms?.cta, t("contact.cta"), cmsEn?.cta)}
         </p>
-        <Button asChild size="lg" className="gap-2">
+        <Button asChild size="lg" variant="primary" className="gap-2 rounded-sm font-semibold">
           <Link href="/contact">
             <Mail size={20} aria-hidden />
             {cmsText(cms?.sayHello, t("contact.sayHello"), cmsEn?.sayHello)}
