@@ -4,7 +4,10 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { Github, Linkedin, Mail, Twitter } from "lucide-react";
 import { useTranslations } from "@/i18n/provider";
+import { BrandLogo } from "@/components/brand-logo";
+import { HomeLink } from "@/components/home-link";
 import { useCmsText } from "@/hooks/use-cms-text";
+import { isHomeHref } from "@/lib/scroll-to-hero";
 import type { FooterContent } from "@/lib/cms/schemas";
 
 const iconByType = {
@@ -56,18 +59,13 @@ export function Footer({ cms, cmsEn }: FooterProps) {
 
   return (
     <footer
-      className="relative border-t border-border bg-section dark:bg-background/95 backdrop-blur-sm"
+      className="relative border-t border-[var(--color-border)] bg-[var(--color-surface)]"
       role="contentinfo"
     >
       <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
         <div className="grid gap-12 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
           <div className="lg:col-span-2">
-            <Link
-              href="/"
-              className="text-heading-sm tracking-tight text-foreground transition-opacity hover:opacity-80"
-            >
-              {t("nav.logo")}
-            </Link>
+            <BrandLogo variant="full" />
             <p className="mt-4 max-w-sm text-caption">
               {cmsText(cms?.tagline, t("footer.tagline"), cmsEn?.tagline)}
             </p>
@@ -79,10 +77,10 @@ export function Footer({ cms, cmsEn }: FooterProps) {
                       href={href}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex h-10 w-10 items-center justify-center rounded-xl text-muted-foreground transition-colors hover:bg-muted hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-foreground focus-visible:ring-offset-2"
+                      className="flex h-9 w-9 items-center justify-center rounded-sm text-[var(--color-text-muted)] transition-colors hover:bg-[var(--color-surface-2)] hover:text-[var(--color-accent)] border border-transparent hover:border-[var(--color-border-strong)]"
                       aria-label={label}
                     >
-                      <Icon size={20} />
+                      <Icon size={18} />
                     </a>
                   </li>
                 ))}
@@ -97,12 +95,18 @@ export function Footer({ cms, cmsEn }: FooterProps) {
             <ul className="mt-4 space-y-3">
               {footerLinks.map(({ href, labelKey }) => (
                 <li key={href}>
-                  <Link
-                    href={href}
-                    className="text-caption text-muted-foreground transition-colors hover:text-foreground"
-                  >
-                    {t(labelKey)}
-                  </Link>
+                  {isHomeHref(href) ? (
+                    <HomeLink className="text-caption text-muted-foreground transition-colors hover:text-foreground">
+                      {t(labelKey)}
+                    </HomeLink>
+                  ) : (
+                    <Link
+                      href={href}
+                      className="text-caption text-muted-foreground transition-colors hover:text-foreground"
+                    >
+                      {t(labelKey)}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

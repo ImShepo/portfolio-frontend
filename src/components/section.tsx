@@ -10,7 +10,7 @@ interface SectionProps {
   subtitle?: string;
   children: ReactNode;
   className?: string;
-  /** Use alternating background for visual separation (e.g. #f1f5f9 in light) */
+  /** Full-bleed layout wrapper (same background as page) */
   alt?: boolean;
 }
 
