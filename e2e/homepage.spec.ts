@@ -8,7 +8,7 @@ test.describe("Homepage", () => {
     await expect(page.getByRole("banner")).toBeVisible();
     await expect(page.locator("#main-content")).toBeVisible();
     await expect(page.getByRole("heading", { level: 1 })).toBeVisible();
-    await expect(page.getByRole("link", { name: /case studies|proyectos|estudos|études/i })).toBeVisible();
+    await expect(page.locator('main a[href="/projects"]').first()).toBeVisible();
   });
 
   test("has no serious accessibility violations", async ({ page }) => {

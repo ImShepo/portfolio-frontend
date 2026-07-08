@@ -56,7 +56,7 @@ export function SelectedOutcomes({ cms, cmsEn }: SelectedOutcomesProps) {
   const cmsText = useCmsText();
 
   const outcomes = cms?.items ?? [
-    { value: 4, suffix: "+", label: t("outcomes.items.lcp") },
+    { value: 5, suffix: "+", label: t("outcomes.items.lcp") },
     { value: 8, suffix: "+", label: t("outcomes.items.checkout") },
     { value: 3, suffix: "+", label: t("outcomes.items.teams") },
     { value: 5, suffix: "", label: t("outcomes.items.uptime") },

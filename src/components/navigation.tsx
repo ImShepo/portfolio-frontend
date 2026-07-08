@@ -97,7 +97,7 @@ export function Navigation() {
             <ThemeToggle />
             <Link
               href="/contact"
-              className="ml-1 rounded-sm bg-[var(--color-accent)] px-4 py-1.5 text-sm font-semibold text-white transition-all hover:bg-[var(--color-accent-bright)] hover:shadow-[0_0_20px_var(--color-accent-glow)]"
+              className="ml-1 rounded-sm bg-[var(--color-action-primary-bg)] px-4 py-1.5 text-sm font-semibold text-white transition-all hover:bg-[var(--color-accent-bright)] hover:shadow-[0_0_20px_var(--color-accent-glow)]"
             >
               {t("nav.contact")}
             </Link>
@@ -167,7 +167,7 @@ export function Navigation() {
               <li className="pt-3 pb-2">
                 <Link
                   href="/contact"
-                  className="block w-full rounded-sm bg-[var(--color-accent)] px-4 py-2.5 text-center text-sm font-semibold text-white"
+                  className="block w-full rounded-sm bg-[var(--color-action-primary-bg)] px-4 py-2.5 text-center text-sm font-semibold text-white"
                   onClick={() => setMobileOpen(false)}
                 >
                   {t("nav.contact")}

@@ -53,7 +53,7 @@ function buildHome(m: Messages): HomeContent {
       title: m.outcomes.title,
       subtitle: m.outcomes.subtitle,
       items: [
-        { value: 4, suffix: "+", label: m.outcomes.items.lcp },
+        { value: 5, suffix: "+", label: m.outcomes.items.lcp },
         { value: 8, suffix: "+", label: m.outcomes.items.checkout },
         { value: 3, suffix: "+", label: m.outcomes.items.teams },
         { value: 5, suffix: "", label: m.outcomes.items.uptime },

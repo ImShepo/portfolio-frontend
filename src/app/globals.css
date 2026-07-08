@@ -16,7 +16,7 @@
   --color-section: #0f0f1a;
   --color-text-primary: #f0f2ff;
   --color-text-secondary: #8b91b0;
-  --color-text-muted: #5a6080;
+  --color-text-muted: #757da3;
   --color-border: rgba(255, 255, 255, 0.07);
   --color-border-strong: rgba(255, 255, 255, 0.14);
 
@@ -28,7 +28,7 @@
   --color-accent-on: #ffffff;
 
   /* Actions */
-  --color-action-primary-bg: #4c7eff;
+  --color-action-primary-bg: #3a63e8;
   --color-action-primary-text: #ffffff;
   --color-action-secondary-bg: transparent;
   --color-action-secondary-text: #f0f2ff;
@@ -73,7 +73,7 @@
   --border: var(--color-border);
   --card: var(--color-surface);
   --card-foreground: var(--color-text-primary);
-  --primary: var(--color-accent);
+  --primary: var(--color-action-primary-bg);
   --primary-foreground: var(--color-accent-on);
   --accent: var(--color-accent);
   --accent-foreground: var(--color-accent-on);
@@ -179,7 +179,7 @@ html.light {
   --border: var(--color-border);
   --card: var(--color-surface);
   --card-foreground: var(--color-text-primary);
-  --primary: var(--color-accent);
+  --primary: var(--color-action-primary-bg);
   --primary-foreground: var(--color-accent-on);
 }
 
@@ -191,7 +191,7 @@ html.dark {
   --border: var(--color-border);
   --card: var(--color-surface);
   --card-foreground: var(--color-text-primary);
-  --primary: var(--color-accent);
+  --primary: var(--color-action-primary-bg);
   --primary-foreground: var(--color-accent-on);
 }
 
@@ -339,8 +339,8 @@ html.light .glass-subtle {
 /* ─── Primary CTA button ────────────────────────────────────────────────────  */
 
 .btn-gradient-cta {
-  background: var(--color-accent);
-  color: #ffffff;
+  background: var(--color-action-primary-bg);
+  color: var(--color-action-primary-text);
   transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.15s ease;
 }
 .btn-gradient-cta:hover {

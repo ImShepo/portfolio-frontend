@@ -10,9 +10,9 @@ test.describe("Projects", () => {
   });
 
   test("project detail page renders", async ({ page }) => {
-    await page.goto("/projects/real-time-dashboard");
+    await page.goto("/projects/mobility-metrics-platform");
 
-    await expect(page.getByRole("heading", { level: 1 })).toHaveText(/real-time analytics dashboard/i);
-    await expect(page.getByRole("link", { name: /back to projects|volver|voltar|retour/i })).toBeVisible();
+    await expect(page.getByRole("heading", { level: 1 })).toHaveText(/mobility metrics platform/i);
+    await expect(page.getByRole("link", { name: /back to projects|volver|voltar|retour|torna ai/i })).toBeVisible();
   });
 });
