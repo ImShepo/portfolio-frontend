@@ -16,13 +16,8 @@ function CountUp({ target, suffix }: { target: number; suffix: string }) {
   const [value, setValue] = useState(0);
 
   useEffect(() => {
-    if (!inView || hasStartedRef.current) return;
+    if (!inView || hasStartedRef.current || reduceMotion) return;
     hasStartedRef.current = true;
-
-    if (reduceMotion) {
-      setValue(target);
-      return;
-    }
 
     const duration = 900;
     const start = performance.now();
