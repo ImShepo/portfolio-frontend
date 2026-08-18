@@ -3,6 +3,7 @@
 @import "shadcn/tailwind.css";
 
 @custom-variant dark (&:is(.dark *));
+@custom-variant light (&:is(.light *));
 
 /* ==========================================================================
    SHEPO DESIGN TOKENS — Dark-first, Electric Blue accent, Industrial type
@@ -328,43 +329,38 @@ html.light .glass-subtle {
 }
 
 .project-cover__glow,
+.project-cover__wash,
 .project-cover__vignette {
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-html.light .project-cover {
-  background: linear-gradient(145deg, #e8ecf8 0%, #f6f7fd 52%, #eef1fa 100%);
-  padding: 0.7rem;
-}
-
-html.light .project-cover__media {
-  border-radius: 0.85rem;
-  overflow: hidden;
-  box-shadow:
-    inset 0 0 0 1px rgba(47, 94, 220, 0.14),
-    0 14px 34px -24px rgba(47, 94, 220, 0.55);
-}
-
-html.light .project-cover__image {
-  filter: saturate(1.1) contrast(1.06) brightness(1.04);
-}
-
 html.light .project-cover__glow {
   opacity: 1;
   background:
-    radial-gradient(circle at 18% 14%, rgba(47, 94, 220, 0.2), transparent 46%),
-    radial-gradient(circle at 84% 78%, rgba(76, 126, 255, 0.14), transparent 42%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.12), rgba(244, 245, 251, 0.28));
+    radial-gradient(circle at 16% 12%, rgba(47, 94, 220, 0.22), transparent 44%),
+    radial-gradient(circle at 86% 82%, rgba(76, 126, 255, 0.16), transparent 40%);
+}
+
+html.light .project-cover__wash {
+  opacity: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.42) 0%,
+    rgba(255, 255, 255, 0.12) 42%,
+    rgba(255, 255, 255, 0.34) 100%
+  );
+  mix-blend-mode: soft-light;
 }
 
 html.light .project-cover__vignette {
   opacity: 1;
-  box-shadow: inset 0 0 48px rgba(244, 245, 251, 0.42);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.55),
+    inset 0 0 64px rgba(255, 255, 255, 0.38);
 }
 
 html.light .project-cover--hero {
-  padding: 0;
   background: linear-gradient(180deg, #e9edf8 0%, #f4f5fb 42%, #eef1fa 100%);
 }
 
@@ -373,19 +369,17 @@ html.light .project-cover--hero .project-cover__media {
   box-shadow: none;
 }
 
-html.light .project-cover--hero .project-cover__image {
-  filter: saturate(1.05) contrast(1.03) brightness(1.02);
-  opacity: 0.72;
-}
-
-html.light .project-cover--hero .project-cover__glow {
-  background:
-    radial-gradient(ellipse 80% 55% at 50% 20%, rgba(47, 94, 220, 0.16), transparent 70%),
-    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(244, 245, 251, 0.55));
+html.light .project-cover--hero .project-cover__wash {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.28) 0%,
+    rgba(255, 255, 255, 0.08) 38%,
+    rgba(244, 245, 251, 0.72) 100%
+  );
 }
 
 html.light .project-cover--hero .project-cover__vignette {
-  box-shadow: inset 0 -80px 120px rgba(244, 245, 251, 0.65);
+  box-shadow: inset 0 -96px 140px rgba(244, 245, 251, 0.82);
 }
 
 html.dark .project-cover--hero .project-cover__image {

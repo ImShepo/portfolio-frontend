@@ -62,7 +62,7 @@ export function ProjectCard({
         className={cn(
           "absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100",
           variant === "grid"
-            ? "bg-gradient-to-t from-black/40 via-transparent to-transparent dark:from-black/40"
+            ? "bg-gradient-to-t from-black/40 via-transparent to-transparent light:from-white/75 light:via-white/20"
             : "bg-gradient-to-t from-[var(--color-bg)]/80 via-transparent to-transparent"
         )}
       />
