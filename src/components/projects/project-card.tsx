@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Card, CardHeader } from "@/components/ui/card";
+import { ProjectCoverImage } from "@/components/projects/project-cover-image";
 import { ProjectLinks } from "@/components/projects/project-links";
 import { getProjectImageSrc } from "@/lib/project-image";
 import { cn } from "@/lib/utils";
@@ -47,29 +47,22 @@ export function ProjectCard({
   );
 
   const imageBlock = (
-    <div
-      className={cn(
-        "relative aspect-video w-full overflow-hidden bg-muted",
-        variant === "grid" ? "rounded-t-2xl" : "bg-[var(--color-surface-2)]"
+    <ProjectCoverImage
+      src={getProjectImageSrc(project.image)}
+      alt={title}
+      priority={priority}
+      variant="card"
+      className={cn(variant === "grid" && "rounded-t-2xl")}
+      imageClassName={cn(
+        variant === "featured" &&
+          "opacity-90 transition-all duration-500 group-hover:scale-[1.02] group-hover:opacity-100 dark:opacity-80"
       )}
     >
-      <Image
-        src={getProjectImageSrc(project.image)}
-        alt={title}
-        fill
-        priority={priority}
-        className={cn(
-          "object-cover transition-transform duration-300 ease-out group-hover:scale-105",
-          variant === "featured" &&
-            "opacity-80 transition-all duration-500 group-hover:scale-[1.02] group-hover:opacity-100"
-        )}
-        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-      />
       <div
         className={cn(
           "absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100",
           variant === "grid"
-            ? "bg-gradient-to-t from-black/40 via-transparent to-transparent"
+            ? "bg-gradient-to-t from-black/40 via-transparent to-transparent dark:from-black/40"
             : "bg-gradient-to-t from-[var(--color-bg)]/80 via-transparent to-transparent"
         )}
       />
@@ -83,7 +76,7 @@ export function ProjectCard({
       >
         <ArrowUpRight size={variant === "grid" ? 18 : 15} aria-hidden />
       </span>
-    </div>
+    </ProjectCoverImage>
   );
 
   const body = (
@@ -142,9 +135,7 @@ export function ProjectCard({
     >
       <Link href={`/projects/${project.slug}`} className="group flex flex-1 flex-col">
         {imageBlock}
-        <CardHeader className="flex-1">
-          {body}
-        </CardHeader>
+        <CardHeader className="flex-1">{body}</CardHeader>
       </Link>
       {actions}
     </Card>

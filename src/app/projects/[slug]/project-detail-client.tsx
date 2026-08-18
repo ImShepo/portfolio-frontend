@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 import { Github, ExternalLink, ArrowLeft } from "lucide-react";
@@ -9,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { useTranslations } from "@/i18n/provider";
 import { useSingleProjectText } from "@/hooks/use-project-text";
 import { getProjectImageSrc } from "@/lib/project-image";
+import { ProjectCoverImage } from "@/components/projects/project-cover-image";
 import { StickySection } from "@/components/scroll/StickySection";
 import type { Project } from "@/types";
 
@@ -107,18 +107,17 @@ export function ProjectDetailClient({ project, projectEn }: ProjectDetailClientP
   return (
     <article className="min-h-screen">
       <section ref={heroRef} className="relative h-[145vh]">
-        <div className="sticky top-0 h-screen w-full overflow-hidden bg-zinc-900">
+        <div className="sticky top-0 h-screen w-full overflow-hidden bg-[var(--color-surface-2)] dark:bg-zinc-900">
           <motion.div className="absolute inset-0" style={{ scale: heroImageScale }}>
-            <Image
+            <ProjectCoverImage
               src={getProjectImageSrc(project.image)}
               alt={title}
-              fill
-              className="object-cover opacity-50"
               priority
-              sizes="100vw"
+              variant="hero"
+              className="project-cover--hero"
             />
           </motion.div>
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-background/10" />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/75 to-background/15 dark:via-background/60 dark:to-background/10" />
 
           <motion.div
             className="relative z-10 flex h-full flex-col"
