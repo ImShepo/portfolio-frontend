@@ -155,6 +155,14 @@
     "it": "Italiano"
   },
   "projectItems": {
+    "trueque-platform": {
+      "title": "Trueque Platform",
+      "description": "Colombian multi-tenant retail SaaS — Angular app and Spring Boot API with DIAN e-invoicing, POS, and inventory."
+    },
+    "trueque-admin": {
+      "title": "Trueque Admin & Auth",
+      "description": "Internal admin portal and Keycloak identity infrastructure for Trueque — tenant onboarding, DIAN certificates, and subscriptions."
+    },
     "mobility-metrics-platform": {
       "title": "Mobility Metrics Platform",
       "description": "Full stack platform for real-time mobility monitoring — Flutter mobile app and NestJS web admin panel."
@@ -163,17 +171,21 @@
       "title": "Virtual World Cup Album",
       "description": "Gamified digital collectibles platform with social mechanics, referral system, and rewards."
     },
+    "coc-analytics": {
+      "title": "CoC Analytics",
+      "description": "Flutter companion app for Clash of Clans — player profiles, clan stats, and head-to-head comparisons."
+    },
     "community-marketplace": {
       "title": "Community Marketplace",
-      "description": "Hyperlocal marketplace with geolocation, nearby store discovery, and order management."
+      "description": "Hyperlocal Colombian marketplace — Flutter app, React web, and NestJS API with PostGIS discovery and MercadoPago checkout."
+    },
+    "creations-3d": {
+      "title": "Creations 3D",
+      "description": "3D printing marketplace — Flutter app and NestJS API for physical prints, digital STL downloads, and creator/admin tooling."
     },
     "atec-lms": {
       "title": "ATEC Learning Management System",
       "description": "Full-featured LMS for course management, content delivery, and learning progress tracking."
-    },
-    "wheels-gogo": {
-      "title": "Wheels Gogo",
-      "description": "Carpooling app reducing commuting costs and emissions by connecting drivers and passengers."
     }
   }
 }
