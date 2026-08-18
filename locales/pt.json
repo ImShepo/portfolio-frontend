@@ -155,6 +155,14 @@
     "it": "Italiano"
   },
   "projectItems": {
+    "trueque-platform": {
+      "title": "Trueque Platform",
+      "description": "SaaS de varejo colombiano multi-tenant — app Angular e API Spring Boot com faturamento eletrônico DIAN, PDV e estoque."
+    },
+    "trueque-admin": {
+      "title": "Trueque Admin & Auth",
+      "description": "Portal admin interno e infraestrutura Keycloak para Trueque — onboarding de tenants, certificados DIAN e assinaturas."
+    },
     "mobility-metrics-platform": {
       "title": "Plataforma de Métricas de Mobilidade",
       "description": "Plataforma full stack para monitoramento de mobilidade em tempo real — app Flutter e painel web com NestJS."
@@ -163,17 +171,21 @@
       "title": "Álbum Virtual Copa do Mundo",
       "description": "Plataforma gamificada de colecionáveis digitais com mecânicas sociais, sistema de convites e recompensas."
     },
+    "coc-analytics": {
+      "title": "CoC Analytics",
+      "description": "App Flutter para Clash of Clans — perfis de jogadores, estatísticas de clãs e comparações diretas."
+    },
     "community-marketplace": {
       "title": "Marketplace Comunitário",
-      "description": "Marketplace hiperlocal com geolocalização, descoberta de lojas próximas e gestão de pedidos."
+      "description": "Marketplace hiperlocal colombiano — app Flutter, web React e API NestJS com descoberta PostGIS e checkout MercadoPago."
+    },
+    "creations-3d": {
+      "title": "Creations 3D",
+      "description": "Marketplace de impressão 3D — app Flutter e API NestJS para impressões físicas, downloads STL digitais e painel de criador/admin."
     },
     "atec-lms": {
       "title": "Sistema de Gestão de Aprendizagem ATEC",
       "description": "LMS completo para gestão de cursos, distribuição de conteúdo e acompanhamento do progresso de aprendizagem."
-    },
-    "wheels-gogo": {
-      "title": "Wheels Gogo",
-      "description": "App de carona que reduz custos de deslocamento e emissões conectando motoristas e passageiros."
     }
   }
 }

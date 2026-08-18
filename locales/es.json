@@ -155,6 +155,14 @@
     "it": "Italiano"
   },
   "projectItems": {
+    "trueque-platform": {
+      "title": "Trueque Platform",
+      "description": "SaaS retail colombiano multi-tenant — app Angular y API Spring Boot con facturación electrónica DIAN, POS e inventario."
+    },
+    "trueque-admin": {
+      "title": "Trueque Admin & Auth",
+      "description": "Portal admin interno e infraestructura Keycloak para Trueque — onboarding de tenants, certificados DIAN y suscripciones."
+    },
     "mobility-metrics-platform": {
       "title": "Plataforma de Métricas de Movilidad",
       "description": "Plataforma full stack para monitorización de movilidad en tiempo real — app móvil Flutter y panel de administración web con NestJS."
@@ -163,17 +171,21 @@
       "title": "Álbum Virtual Copa Mundial",
       "description": "Plataforma gamificada de coleccionables digitales con mecánicas sociales, sistema de invitaciones y recompensas."
     },
+    "coc-analytics": {
+      "title": "CoC Analytics",
+      "description": "App Flutter para Clash of Clans — perfiles de jugadores, estadísticas de clanes y comparativas cara a cara."
+    },
     "community-marketplace": {
       "title": "Marketplace Comunitario",
-      "description": "Marketplace hiperlocal con geolocalización, descubrimiento de tiendas cercanas y gestión de pedidos."
+      "description": "Marketplace hiperlocal colombiano — app Flutter, web React y API NestJS con descubrimiento PostGIS y checkout MercadoPago."
+    },
+    "creations-3d": {
+      "title": "Creations 3D",
+      "description": "Marketplace de impresión 3D — app Flutter y API NestJS para impresiones físicas, descargas STL digitales y panel de creador/admin."
     },
     "atec-lms": {
       "title": "Sistema de Gestión del Aprendizaje ATEC",
       "description": "LMS completo para gestión de cursos, distribución de contenidos y seguimiento del progreso de aprendizaje."
-    },
-    "wheels-gogo": {
-      "title": "Wheels Gogo",
-      "description": "App de carpooling que reduce costos de desplazamiento y emisiones conectando conductores y pasajeros."
     }
   }
 }

@@ -155,6 +155,14 @@
     "it": "Italiano"
   },
   "projectItems": {
+    "trueque-platform": {
+      "title": "Trueque Platform",
+      "description": "SaaS retail colombiano multi-tenant — app Angular e API Spring Boot con fatturazione elettronica DIAN, POS e inventario."
+    },
+    "trueque-admin": {
+      "title": "Trueque Admin & Auth",
+      "description": "Portale admin interno e infrastruttura Keycloak per Trueque — onboarding tenant, certificati DIAN e abbonamenti."
+    },
     "mobility-metrics-platform": {
       "title": "Piattaforma Metriche di Mobilità",
       "description": "Piattaforma full stack per il monitoraggio della mobilità in tempo reale — app mobile Flutter e pannello admin web con NestJS."
@@ -163,17 +171,21 @@
       "title": "Album Virtuale Coppa del Mondo",
       "description": "Piattaforma gamificata di collezionabili digitali con meccaniche social, sistema di referral e ricompense."
     },
+    "coc-analytics": {
+      "title": "CoC Analytics",
+      "description": "App Flutter per Clash of Clans — profili giocatori, statistiche clan e confronti diretti."
+    },
     "community-marketplace": {
       "title": "Marketplace Comunitario",
-      "description": "Marketplace iperlocale con geolocalizzazione, scoperta di negozi vicini e gestione degli ordini."
+      "description": "Marketplace iperlocale colombiano — app Flutter, web React e API NestJS con scoperta PostGIS e checkout MercadoPago."
+    },
+    "creations-3d": {
+      "title": "Creations 3D",
+      "description": "Marketplace di stampa 3D — app Flutter e API NestJS per stampe fisiche, download STL digitali e strumenti creatore/admin."
     },
     "atec-lms": {
       "title": "Sistema di Gestione dell'Apprendimento ATEC",
       "description": "LMS completo per la gestione dei corsi, l'erogazione dei contenuti e il monitoraggio dei progressi di apprendimento."
-    },
-    "wheels-gogo": {
-      "title": "Wheels Gogo",
-      "description": "App di carpooling che riduce costi di spostamento ed emissioni collegando conducenti e passeggeri."
     }
   }
 }
